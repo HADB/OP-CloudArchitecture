@@ -1,0 +1,26 @@
+/**
+ * global common style
+ * zhuyun v 1.0
+ */
+.dnone{
+  display: none;
+}
+
+.fleft{
+  float: left;
+}
+
+.fright{
+  float: right;
+}
+
+.cursorMove{
+  cursor:move !important;
+}
+.cursorNoDrop{
+  cursor: no-drop !important;
+}
+
+.red{
+  color:red;
+}

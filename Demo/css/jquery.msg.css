@@ -1,0 +1,137 @@
+  .hide{
+    display:none !important;
+    display:none;
+  }
+  .ui-modal table tr{
+    margin:0;
+  }
+  .ui-modal table tr th,.ui-modal table tr td{
+    border:0;text-align: left;
+    font-size:100%;
+    margin:0;
+    padding:10px;
+  }
+  .ui-modal table tr th{
+    font-size:16px;
+    padding:10px;
+    background:#000;
+    color:#fff
+  }
+  .span10{width:100%;position: relative;}
+  .span9{width:90%;position: relative;}
+  .span8{width:80%;position: relative;}
+  .span7{width:70%;position: relative;}
+  .span6{width:60%;position: relative;}
+  .span5{width:50%;position: relative;}
+  .span4{width:40%;position: relative;}
+  .span3{width:30%;position: relative;}
+  .span2{width:20%;position: relative;}
+  .span1{width:10%;position: relative;}
+  
+  .ui-modal{
+    max-width:35%;
+    *width:35%;
+    height:40%;
+    top:50%;
+    left:50%;
+    margin: -10% -20%;
+    font-family:Arial,'Microsoft Yahei','SimSun';
+    position: fixed;
+    _position: absolute;
+  }
+  .ui-modal table{
+    border:0;
+    background: #fff;
+    box-shadow: 0 0 50px #000;
+    -webkit-box-shadow: 0 0 50px #000;
+    -moz-box-shadow: 0 0 50px #000;
+    -o-box-shadow: 0 0 50px #000;
+    -ms-box-shadow: 0 0 50px #000;
+  }
+  .ui-modal table td.btn-panel{
+    text-align: center;
+  }
+  .ui-modal td a.btn{
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    _display: inline;
+    _zoom:1;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+  .ui-modal td a.btn-ok{
+    background: #000;
+    border: 1px solid #000;
+    color:#fff;
+  }
+  .ui-modal td a.btn-cancel{
+    background: #666;
+    border: 1px solid #666;
+    color:#fff;
+  }
+  .ui-modal td a.btn-ok:hover{
+    background: #fff;
+    border: 1px solid #000;
+    color:#000;
+  }
+  .ui-modal td a.btn-cancel:hover{
+    background: #fff;
+    border: 1px solid #666;
+    color:#666;
+  }
+  .icon div{
+    min-width:50px;
+    min-height:50px;
+    display:inline-block;
+    *width:50px;
+    *height:50px;
+    _display:inline;
+    _zoom:1;
+  }
+  .window-overlay{
+    position:fixed;
+    _position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    -webkit-box-shadow:inset 0 0 400px 100px #555;
+    -moz-box-shadow:inset 0 0 400px 100px #555;
+    box-shadow:inset 0 0 400px 100px #555;
+    background:#000 \0;
+    *background:#000;
+    _background:#ccc;
+    opacity:0.5 \0;
+    filter:alpha(opacity=50) \0;
+    *opacity:0.5;
+    *filter:alpha(opacity=50);
+    z-index:101
+  }
+  
+  /* Fix the bug about drag action chaos the overlay background. */
+  .window-overlay-drag{
+    position:fixed;
+    _position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background:#000;
+    _background:#ccc;
+    opacity:0.5;
+    filter:alpha(opacity=50) \0;
+    *opacity:0.5;
+    *filter:alpha(opacity=50);
+    z-index:101
+  }
