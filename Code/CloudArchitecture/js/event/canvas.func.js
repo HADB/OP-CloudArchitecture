@@ -52,7 +52,7 @@ window.canFunc = {
             tools.setCursor('-webkit-grabbing');
             domFunc.onLayerSaveRemark();
             global.isLining = 0;
-            canFunc.lineBlur();
+            //canFunc.lineBlur();
         }
         canFunc.hideDialog(e);
         canFunc.hideScriptPopover(e);
@@ -580,7 +580,7 @@ window.canFunc = {
         if (e.targetNode.parent.parent === this) {
             canFunc.selectNode(this);
             this.corners.leftTop.fire('mouseover');
-            $(document.activeElement).blur();
+            //$(document.activeElement).blur();
             navImg.init();
         }
     },
@@ -755,7 +755,7 @@ window.canFunc = {
     },
     onComClick: function (e) {
         this.corners.leftTop.fire('mouseover');
-        $(document.activeElement).blur();
+        //$(document.activeElement).blur();
         navImg.init();
         canFunc.showAllLineTipInfo();
     },
@@ -1936,7 +1936,7 @@ window.canFunc = {
         _ref = entities.lines;
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
             line = _ref[_i];
-            line.line.blur();
+            //line.line.blur();
             if ((line.startPos.getId() === obj.getId()) || (line.endPos.getId() === obj.getId())) {
                 line.line.select();
             }
@@ -4008,7 +4008,7 @@ window.canFunc = {
         selectComId = global.selectObj && global.selectObj.getId ? global.selectObj.getId() : '';
         if (this.parent.data.startPos !== selectComId && this.parent.data.endPos !== selectComId) {
             $('#container').css('cursor', 'default');
-            this.parent.blur();
+            //this.parent.blur();
             layer.batchDraw();
         }
     },
