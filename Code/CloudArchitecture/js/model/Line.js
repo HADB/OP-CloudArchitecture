@@ -11,11 +11,11 @@ Line = (function () {
             visible: global.lineVisible
         });
         path = new kk.Path({
-            stroke: 'green',
+            stroke: 'yearColor',
             lineJoin: 'round',
             strokeWidth: 2,
             opacity: 0.2,
-            dashArray: [5, 3]
+            //dashArray: [5, 3]
         });
         beginCircle = new kk.Circle({
             radius: 8,
