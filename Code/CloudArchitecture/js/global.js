@@ -76,7 +76,6 @@ global = {
     tmpLineData: {},
     isRedragStage: 0,
     isShowComTip: 0,
-    isShowLineTip: 0,
     lastBackHistory: 0,
     ajaxReq: null,
     isFirstLoad: true,

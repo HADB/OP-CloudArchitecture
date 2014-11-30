@@ -581,14 +581,6 @@
         background: #7f8999 url(../img/com-plugin/canvas_displayTip_hide.png) no-repeat center center;
     }
 
-#showLineTipBtn {
-    background: #ECEFF2 url(../img/com-plugin/canvas_displayTip_show.png) no-repeat center center;
-}
-
-    #showLineTipBtn.active, #showLineTipBtn.eye-close {
-        background: #7f8999 url(../img/com-plugin/canvas_displayTip_hide.png) no-repeat center center;
-    }
-
 #canvasExportBtn {
     background: #ECEFF2 url(../img/com-plugin/canvas_exportBtn.png) no-repeat center center;
 }
