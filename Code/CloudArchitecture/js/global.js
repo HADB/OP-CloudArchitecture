@@ -33,7 +33,7 @@ global = {
     resizeOffsetY: 0,
     delCusTplId: 0,
     resizeInitSize: {},
-    lineType: def.lineType.bright,
+    lineType: def.lineType.rightAngle,
     isMove: 0,
     comList: {},
     comReleaseList: [],
