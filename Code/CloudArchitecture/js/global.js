@@ -84,7 +84,7 @@ global = {
     comSelectedInComListModal: {},
     tabPaneActive: {},
     lineArrow: null,
-    lineVisible: true,
+    lineVisible: true, //TODO: remove this
     newEcsInstanceId: '',
     titleLenNormal: 20,
     titleLenSelect: 7,

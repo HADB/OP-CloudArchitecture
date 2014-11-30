@@ -4020,25 +4020,7 @@ window.canFunc = {
       layer.batchDraw();
     }
   },
-  onHideLineBtnClick: function(e) {
-    var i, line, _i, _len, _ref;
-    global.lineVisible = !global.lineVisible;
-    _ref = entities.lines;
-    for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
-      line = _ref[i];
-      line.line.setVisible(global.lineVisible);
-    }
-    layer.batchDraw();
-    global.isShowLineTip = 0;
-    $('#showLineTipBtn').removeClass('eye-close').attr('title', '显示线条备注');
-    global.isShowComTip = 0;
-    $('#showComTipBtn').removeClass('eye-close').attr('title', '显示全部备注');
-    if (global.lineVisible) {
-      $('#hideLineBtn').removeClass('eye-close').attr('title', '隐藏线条');
-    } else {
-      $('#hideLineBtn').addClass('eye-close').attr('title', '显示线条');
-    }
-  },
+
   editLineInfo: function() {
     var absPos, line, lineId, pos, size;
     lineId = this.parent.getId();
@@ -4090,7 +4072,6 @@ window.canFunc = {
       line.line.setVisible(global.lineVisible);
     }
     layer.batchDraw();
-    $('#hideLineBtn').removeClass('eye-close').attr('title', '隐藏线条');
     if (global.isShowComTip) {
       global.isShowComTip = 0;
       $('#showComTipBtn').removeClass('eye-close').attr('title', '显示全部备注');
@@ -4112,7 +4093,6 @@ window.canFunc = {
       line.line.setVisible(global.lineVisible);
     }
     layer.batchDraw();
-    $('#hideLineBtn').removeClass('eye-close').attr('title', '隐藏线条');
     if (global.isShowLineTip) {
       global.isShowLineTip = 0;
       $('#showLineTipBtn').removeClass('eye-close').attr('title', '显示线条备注');

@@ -573,14 +573,6 @@
         opacity: 0.8;
     }
 
-#hideLineBtn {
-    background: #ECEFF2 url(../img/com-plugin/canvas_displayLine_hide.png) no-repeat center center;
-}
-
-    #hideLineBtn.active, #hideLineBtn.eye-close {
-        background: #7f8999 url(../img/com-plugin/canvas_displayLine_show.png) no-repeat center center;
-    }
-
 #showComTipBtn {
     background: #ECEFF2 url(../img/com-plugin/canvas_displayTip_show.png) no-repeat center center;
 }
