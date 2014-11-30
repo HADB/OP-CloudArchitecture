@@ -2,243 +2,243 @@
 var schemaEcs, schemaLayer, schemaLine, schemaOss, schemaRds, schemaSlb;
 
 schemaLayer = schema({
-  id: String,
-  name: String,
-  tname: String,
-  kind: String,
-  x: Number,
-  y: Number,
-  remark: String,
-  width: Number,
-  height: Number,
-  children: [
-    {
-      id: String
-    }
-  ]
+    id: String,
+    name: String,
+    tname: String,
+    kind: String,
+    x: Number,
+    y: Number,
+    remark: String,
+    width: Number,
+    height: Number,
+    children: [
+      {
+          id: String
+      }
+    ]
 });
 
 schemaEcs = schema({
-  id: String,
-  name: String,
-  tname: String,
-  kind: String,
-  x: Number,
-  y: Number,
-  remark: String,
-  amount: Number,
-  cpu: Number,
-  memory: Number,
-  storage: Number,
-  region: String,
-  bandWidth: Number,
-  osVal: String,
-  osType: String,
-  osVersion: String,
-  payType: String,
-  buyType: String,
-  buyTime: Number,
-  maps: Object,
-  cloudShield: String,
-  disks: [
-    {
-      diskId: String,
-      category: String,
-      size: Number,
-      type: String,
-      isSystem: Boolean
-    }
-  ],
-  openList: {
-    isOpen: Boolean,
-    instanceId: String,
-    instanceName: String,
-    instanceType: String,
-    hostName: String,
-    publicIpAddress: [String],
-    innerIpAddress: [String],
-    internetMaxBandwidthIn: Number,
-    internetMaxBandwidthOut: Number,
-    internetChargeType: String,
-    securityGroupIds: [
+    id: String,
+    name: String,
+    tname: String,
+    kind: String,
+    x: Number,
+    y: Number,
+    remark: String,
+    amount: Number,
+    cpu: Number,
+    memory: Number,
+    storage: Number,
+    region: String,
+    bandWidth: Number,
+    osVal: String,
+    osType: String,
+    osVersion: String,
+    payType: String,
+    buyType: String,
+    buyTime: Number,
+    maps: Object,
+    cloudShield: String,
+    disks: [
       {
-        securityGroupId: String
+          diskId: String,
+          category: String,
+          size: Number,
+          type: String,
+          isSystem: Boolean
       }
     ],
-    securityControl: String,
-    vlanId: String,
-    imageId: String,
-    regionId: String,
-    status: String,
-    zoneId: String
-  },
-  openLists: [
-    {
-      instanceId: String,
-      instanceName: String,
-      instanceType: String,
-      hostName: String,
-      publicIpAddress: [String],
-      innerIpAddress: [String],
-      internetMaxBandwidthIn: Number,
-      internetMaxBandwidthOut: Number,
-      internetChargeType: String,
-      securityGroupIds: [
-        {
-          securityGroupId: String
-        }
-      ],
-      securityControl: String,
-      vlanId: String,
-      imageId: String,
-      regionId: String,
-      status: String,
-      zoneId: String
-    }
-  ]
+    openList: {
+        isOpen: Boolean,
+        instanceId: String,
+        instanceName: String,
+        instanceType: String,
+        hostName: String,
+        publicIpAddress: [String],
+        innerIpAddress: [String],
+        internetMaxBandwidthIn: Number,
+        internetMaxBandwidthOut: Number,
+        internetChargeType: String,
+        securityGroupIds: [
+          {
+              securityGroupId: String
+          }
+        ],
+        securityControl: String,
+        vlanId: String,
+        imageId: String,
+        regionId: String,
+        status: String,
+        zoneId: String
+    },
+    openLists: [
+      {
+          instanceId: String,
+          instanceName: String,
+          instanceType: String,
+          hostName: String,
+          publicIpAddress: [String],
+          innerIpAddress: [String],
+          internetMaxBandwidthIn: Number,
+          internetMaxBandwidthOut: Number,
+          internetChargeType: String,
+          securityGroupIds: [
+            {
+                securityGroupId: String
+            }
+          ],
+          securityControl: String,
+          vlanId: String,
+          imageId: String,
+          regionId: String,
+          status: String,
+          zoneId: String
+      }
+    ]
 });
 
 schemaRds = schema({
-  id: String,
-  name: String,
-  tname: String,
-  kind: String,
-  x: Number,
-  y: Number,
-  remark: String,
-  dbType: String,
-  dbVersion: String,
-  memory: Number,
-  storage: Number,
-  region: String,
-  amount: Number,
-  buyType: String,
-  buyTime: String,
-  createTime: String,
-  openList: {
-    isOpen: Boolean,
-    overdue: String,
-    accountMaxQuantity: Number,
-    connectionString: String,
-    creationTime: String,
-    dbInstanceClass: String,
-    dbInstanceDescription: String,
-    dbInstanceId: String,
-    dbInstanceNetType: String,
-    dbInstanceStatus: String,
-    dbInstanceStorage: Number,
-    dbMaxQuantity: Number,
-    engine: String,
-    engineVersion: String,
-    lockMode: String,
-    lockReason: String,
-    port: String,
-    regionId: String,
-    tempDBInstanceId: String,
-    databases: [
-      {
-        charset: String,
-        description: String,
+    id: String,
+    name: String,
+    tname: String,
+    kind: String,
+    x: Number,
+    y: Number,
+    remark: String,
+    dbType: String,
+    dbVersion: String,
+    memory: Number,
+    storage: Number,
+    region: String,
+    amount: Number,
+    buyType: String,
+    buyTime: String,
+    createTime: String,
+    openList: {
+        isOpen: Boolean,
+        overdue: String,
+        accountMaxQuantity: Number,
+        connectionString: String,
+        creationTime: String,
+        dbInstanceClass: String,
+        dbInstanceDescription: String,
         dbInstanceId: String,
-        dbname: String,
-        dbstatus: String,
-        engine: String
-      }
-    ],
-    users: [
-      {
-        accountName: String,
-        accountDescription: String,
-        accountStatus: String,
-        dbInstanceId: String,
-        databasePrivilege: [
+        dbInstanceNetType: String,
+        dbInstanceStatus: String,
+        dbInstanceStorage: Number,
+        dbMaxQuantity: Number,
+        engine: String,
+        engineVersion: String,
+        lockMode: String,
+        lockReason: String,
+        port: String,
+        regionId: String,
+        tempDBInstanceId: String,
+        databases: [
           {
-            accountPrivilege: String,
-            dbName: String
+              charset: String,
+              description: String,
+              dbInstanceId: String,
+              dbname: String,
+              dbstatus: String,
+              engine: String
+          }
+        ],
+        users: [
+          {
+              accountName: String,
+              accountDescription: String,
+              accountStatus: String,
+              dbInstanceId: String,
+              databasePrivilege: [
+                {
+                    accountPrivilege: String,
+                    dbName: String
+                }
+              ]
           }
         ]
-      }
-    ]
-  }
+    }
 });
 
 schemaSlb = schema({
-  id: String,
-  name: String,
-  tname: String,
-  kind: String,
-  x: Number,
-  y: Number,
-  remark: String,
-  region: String,
-  ipAddress: String,
-  createTime: String,
-  openList: {
-    isOpen: Boolean,
-    loadBalancerId: String,
-    loadBalancerName: String,
-    loadBalancerStatus: String,
-    address: String,
-    isPublicAddress: String,
-    regionId: String,
-    backendServer: [
-      {
-        serverId: String,
-        weight: Number,
-        protocol: String,
-        listenerPort: Number,
-        backendServerPort: Number
-      }
-    ],
-    listener: [
-      {
-        backendServerPort: Number,
-        listenerPort: Number,
-        protocol: String,
-        listenerStatus: String,
-        interval: Number,
-        scheduler: String,
-        status: String,
-        healthCheck: String,
-        stickySession: String,
-        stickySessionType: String,
-        uri: String,
-        unhealthyThreshold: Number,
-        xForwardedFor: String,
-        cookie: String,
-        domain: String,
-        healthCheckTimeout: Number,
-        healthyThreshold: Number,
-        cookieTimeout: Number,
-        connectTimeout: Number,
-        persitenceTimeout: Number,
-        connectPort: Number
-      }
-    ]
-  }
+    id: String,
+    name: String,
+    tname: String,
+    kind: String,
+    x: Number,
+    y: Number,
+    remark: String,
+    region: String,
+    ipAddress: String,
+    createTime: String,
+    openList: {
+        isOpen: Boolean,
+        loadBalancerId: String,
+        loadBalancerName: String,
+        loadBalancerStatus: String,
+        address: String,
+        isPublicAddress: String,
+        regionId: String,
+        backendServer: [
+          {
+              serverId: String,
+              weight: Number,
+              protocol: String,
+              listenerPort: Number,
+              backendServerPort: Number
+          }
+        ],
+        listener: [
+          {
+              backendServerPort: Number,
+              listenerPort: Number,
+              protocol: String,
+              listenerStatus: String,
+              interval: Number,
+              scheduler: String,
+              status: String,
+              healthCheck: String,
+              stickySession: String,
+              stickySessionType: String,
+              uri: String,
+              unhealthyThreshold: Number,
+              xForwardedFor: String,
+              cookie: String,
+              domain: String,
+              healthCheckTimeout: Number,
+              healthyThreshold: Number,
+              cookieTimeout: Number,
+              connectTimeout: Number,
+              persitenceTimeout: Number,
+              connectPort: Number
+          }
+        ]
+    }
 });
 
 schemaOss = schema({
-  id: String,
-  name: String,
-  tname: String,
-  kind: String,
-  x: Number,
-  y: Number,
-  remark: String,
-  region: String,
-  createTime: String,
-  openList: {
-    isOpen: Boolean,
-    bucketName: String
-  }
+    id: String,
+    name: String,
+    tname: String,
+    kind: String,
+    x: Number,
+    y: Number,
+    remark: String,
+    region: String,
+    createTime: String,
+    openList: {
+        isOpen: Boolean,
+        bucketName: String
+    }
 });
 
 schemaLine = schema({
-  id: String,
-  width: Number,
-  color: String,
-  startObjId: String,
-  endObjId: String,
-  type: Number
+    id: String,
+    width: Number,
+    color: String,
+    startObjId: String,
+    endObjId: String,
+    type: Number
 });

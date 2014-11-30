@@ -3,31 +3,31 @@ var sychro;
 
 sychro = {};
 
-sychro.updateAll = function() {};
+sychro.updateAll = function () { };
 
-sychro.updateEcs = function(instanceId, callback) {
-  var post_data, _callback;
-  post_data = {
-    accessKeyId: global.accessKeyId,
-    accessKeySec: global.accessKeySec,
-    instanceId: instanceId,
-    ownerAccount: def.ownerAccount
-  };
-  _callback = callback ? callback : sychro.updateEcsCallback;
-  $.post('/api/ecs/getInfo', post_data, _callback);
+sychro.updateEcs = function (instanceId, callback) {
+    var post_data, _callback;
+    post_data = {
+        accessKeyId: global.accessKeyId,
+        accessKeySec: global.accessKeySec,
+        instanceId: instanceId,
+        ownerAccount: def.ownerAccount
+    };
+    _callback = callback ? callback : sychro.updateEcsCallback;
+    $.post('/api/ecs/getInfo', post_data, _callback);
 };
 
-sychro.updateEcsCallback = function(data) {
-  var instanceId, json;
-  json = $.evalJSON(data);
-  if (json.code === 200) {
-    instanceId = json.data.InstanceId;
-    global.comList[instanceId].info = json.data;
-  } else {
-    console.log(json);
-  }
+sychro.updateEcsCallback = function (data) {
+    var instanceId, json;
+    json = $.evalJSON(data);
+    if (json.code === 200) {
+        instanceId = json.data.InstanceId;
+        global.comList[instanceId].info = json.data;
+    } else {
+        console.log(json);
+    }
 };
 
-sychro.updateRds = function() {};
+sychro.updateRds = function () { };
 
-sychro.updateSlb = function() {};
+sychro.updateSlb = function () { };

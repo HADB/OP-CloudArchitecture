@@ -10,187 +10,187 @@ pathArr = url.split('/');
 dirName = pathArr[pathArr.length - 2];
 
 switch (dirName) {
-  case 'test.jiagouyun.com':
-    priceurl = 'http://test.jiagouyun.com/price';
-    ali = 'http://api.jiagouyun.com/oauth/aliyun';
-    qq = 'http://api.jiagouyun.com/oauth/qq';
-    weibo = 'http://api.jiagouyun.com/oauth/weibo';
-    exportExcelUrl = 'http://api.jiagouyun.com/excel/export?json=';
-    break;
-  case 'test2.jiagouyun.com':
-    priceurl = 'http://test2.jiagouyun.com/price';
-    ali = 'http://testapi.jiagouyun.com/oauth/aliyun';
-    qq = 'http://testapi.jiagouyun.com/oauth/qq';
-    weibo = 'http://testapi.jiagouyun.com/oauth/weibo';
-    exportExcelUrl = 'http://testapi.jiagouyun.com/excel/export?json=';
-    break;
-  case 'jiagouyun.com':
-    priceurl = 'http://jiagouyun.com/price';
-    ali = 'http://api.jiagouyun.com/oauth/aliyun';
-    qq = 'http://api.jiagouyun.com/oauth/qq';
-    weibo = 'http://api.jiagouyun.com/oauth/weibo';
-    exportExcelUrl = 'http://api.jiagouyun.com/excel/export?json=';
-    break;
-  case 'zhuyun.main':
-    priceurl = 'http://test2.jiagouyun.com/price';
-    ali = 'http://lapi.jiagouyun.com/oauth/aliyun';
-    qq = 'http://lapi.jiagouyun.com/oauth/qq';
-    weibo = 'http://lapi.jiagouyun.com/oauth/weibo';
-    exportExcelUrl = 'http://testapi.jiagouyun.com/excel/export?json=';
-    break;
-  case 'zhuyun.sx':
-    priceurl = 'http://test2.jiagouyun.com/price';
-    ali = 'http://testapi.jiagouyun.com/oauth/aliyun';
-    qq = 'http://testapi.jiagouyun.com/oauth/qq';
-    weibo = 'http://testapi.jiagouyun.com/oauth/weibo';
-    exportExcelUrl = 'http://testapi.jiagouyun.com/excel/export?json=';
-    break;
-  default:
-    priceurl = 'http://test2.jiagouyun.com/price';
-    ali = 'http://lapi.jiagouyun.com/oauth/aliyun';
-    qq = 'http://testapi.jiagouyun.com/oauth/qq';
-    weibo = 'http://testapi.jiagouyun.com/oauth/weibo';
-    exportExcelUrl = 'http://testapi.jiagouyun.com/excel/export?json=';
+    case 'test.jiagouyun.com':
+        priceurl = 'http://test.jiagouyun.com/price';
+        ali = 'http://api.jiagouyun.com/oauth/aliyun';
+        qq = 'http://api.jiagouyun.com/oauth/qq';
+        weibo = 'http://api.jiagouyun.com/oauth/weibo';
+        exportExcelUrl = 'http://api.jiagouyun.com/excel/export?json=';
+        break;
+    case 'test2.jiagouyun.com':
+        priceurl = 'http://test2.jiagouyun.com/price';
+        ali = 'http://testapi.jiagouyun.com/oauth/aliyun';
+        qq = 'http://testapi.jiagouyun.com/oauth/qq';
+        weibo = 'http://testapi.jiagouyun.com/oauth/weibo';
+        exportExcelUrl = 'http://testapi.jiagouyun.com/excel/export?json=';
+        break;
+    case 'jiagouyun.com':
+        priceurl = 'http://jiagouyun.com/price';
+        ali = 'http://api.jiagouyun.com/oauth/aliyun';
+        qq = 'http://api.jiagouyun.com/oauth/qq';
+        weibo = 'http://api.jiagouyun.com/oauth/weibo';
+        exportExcelUrl = 'http://api.jiagouyun.com/excel/export?json=';
+        break;
+    case 'zhuyun.main':
+        priceurl = 'http://test2.jiagouyun.com/price';
+        ali = 'http://lapi.jiagouyun.com/oauth/aliyun';
+        qq = 'http://lapi.jiagouyun.com/oauth/qq';
+        weibo = 'http://lapi.jiagouyun.com/oauth/weibo';
+        exportExcelUrl = 'http://testapi.jiagouyun.com/excel/export?json=';
+        break;
+    case 'zhuyun.sx':
+        priceurl = 'http://test2.jiagouyun.com/price';
+        ali = 'http://testapi.jiagouyun.com/oauth/aliyun';
+        qq = 'http://testapi.jiagouyun.com/oauth/qq';
+        weibo = 'http://testapi.jiagouyun.com/oauth/weibo';
+        exportExcelUrl = 'http://testapi.jiagouyun.com/excel/export?json=';
+        break;
+    default:
+        priceurl = 'http://test2.jiagouyun.com/price';
+        ali = 'http://lapi.jiagouyun.com/oauth/aliyun';
+        qq = 'http://testapi.jiagouyun.com/oauth/qq';
+        weibo = 'http://testapi.jiagouyun.com/oauth/weibo';
+        exportExcelUrl = 'http://testapi.jiagouyun.com/excel/export?json=';
 }
 
 resources = {
-  maxAchitecture: 5,
-  priceurl: priceurl,
-  loginurl: {
-    ali: ali,
-    qq: qq,
-    weibo: weibo
-  },
-  exportExcelUrl: exportExcelUrl,
-  loadImages: {
-    logoGray: config.assetDir + 'logo-gray.png',
-    backGrid: config.assetDir + 'bg-grid.png',
-    ecsIcon: config.comDir + 'ecs80.png',
-    rdsIcon: config.comDir + 'rds80.png',
-    slbIcon: config.comDir + 'slb80.png',
-    ossIcon: config.comDir + 'oss80.png',
-    cdnIcon: config.comDir + 'cdn80.png',
-    ocsIcon: config.comDir + 'ocs80.png',
-    otsIcon: config.comDir + 'ots80.png',
-    odpsIcon: config.comDir + 'odps80.png',
-    yundunIcon: config.comDir + 'yundun80.png',
-    jiankongIcon: config.comDir + 'jiankong80.png',
-    diyIcon: config.comDir + 'diy80.png',
-    diy1Icon: config.comDir + 'diyserver.png',
-    diy2Icon: config.comDir + 'diydb.png',
-    diy3Icon: config.comDir + 'diystorage.png',
-    ecsesIcon: config.comDir + 'ecses80.png',
-    customIcon: config.comDir + 'customImage.png',
-    lineInfoIcon: config.comDir + 'line-info.png',
-    lineInfoIcon_dark: config.comDir + 'line-info-dark.png',
-    mqsIcon: config.comDir + 'mqs80.png',
-    oasIcon: config.comDir + 'oas80.png',
-    opensearchIcon: config.comDir + 'opensearch80.png',
-    ptsIcon: config.comDir + 'pts80.png',
-    slsIcon: config.comDir + 'sls80.png',
-    ecsLittle: config.comDir + 'ecs64.png',
-    rdsLittle: config.comDir + 'rds64.png',
-    slbLittle: config.comDir + 'slb64.png',
-    ossLittle: config.comDir + 'oss64.png',
-    cdnLittle: config.comDir + 'cdn64.png',
-    ocsLittle: config.comDir + 'ocs64.png',
-    otsLittle: config.comDir + 'ots64.png',
-    odpsLittle: config.comDir + 'odps64.png',
-    yundunLittle: config.comDir + 'yundun64.png',
-    jiankongLittle: config.comDir + 'jiankong64.png',
-    diyLittle: config.comDir + 'diy64.png',
-    mqsLittle: config.comDir + 'mqs64.png',
-    oasLittle: config.comDir + 'oas64.png',
-    opensearchLittle: config.comDir + 'opensearch64.png',
-    ptsLittle: config.comDir + 'pts64.png',
-    slsLittle: config.comDir + 'sls64.png',
-    diskCloud: config.diskDir + 'ico-cloud.png',
-    diskEphemeral: config.diskDir + 'ico-ephemeral.png',
-    diskSsd: config.diskDir + 'ico-ssd.png',
-    diskSnapshot: config.diskDir + 'ico_snapshot.png',
-    diskSnapshot: config.diskDir + 'ico_snapshot.png',
-    centosIcon: config.pluginDir + 'os_centos.png',
-    debianIcon: config.pluginDir + 'os_debian.png',
-    redhatIcon: config.pluginDir + 'os_redhat.png',
-    ubuntuIcon: config.pluginDir + 'os_ubuntu.png',
-    windowsIcon: config.pluginDir + 'os_windows.png',
-    customIcon: config.pluginDir + 'os_custom.png',
-    layerOperate: config.pluginDir + 'ico_option_s.png',
-    layerConnect: config.pluginDir + 'ico_line_s.png',
-    layerResize: config.pluginDir + 'ico_resize_s.png',
-    layerInfo: config.pluginDir + 'ico_info_s.png',
-    comHelp: config.pluginDir + 'ico_help_s.png',
-    comWDisk: config.pluginDir + 'ico_wdisk_s.png',
-    comMore: config.pluginDir + 'ico_more_s.png',
-    comStarting: config.pluginDir + 'ico_status_starting.png',
-    comRunning: config.pluginDir + 'ico_status_runing.png',
-    comStopping: config.pluginDir + 'ico_status_stopping.png',
-    comStopped: config.pluginDir + 'ico_status_stop.png',
-    comUnbound: config.pluginDir + 'ico_status_unbound.png',
-    com32bits: config.pluginDir + 'ico_32bit_s.png',
-    com64bits: config.pluginDir + 'ico_64bit_s.png',
-    com32bitc: config.pluginDir + 'ico_32bit_c.png',
-    com64bitc: config.pluginDir + 'ico_64bit_c.png',
-    comHasCode: config.pluginDir + 'ico_code_s.png',
-    comBandwidth: config.pluginDir + 'ico_bandwidth_s.png',
-    comBDisk: config.pluginDir + 'ico_bdisk_s.png',
-    comCode: config.pluginDir + 'ico_nocode_s.png',
-    comNoBind: config.pluginDir + 'ico_nobind_s.png',
-    comNoBit: config.pluginDir + 'ico_nobit_s.png',
-    comNoSys: config.pluginDir + 'ico_nosys_s.png',
-    comNoSysNoBit: config.pluginDir + 'ico_nosys_nobit_s.png',
-    statusEdit: config.pluginDir + 'status_edit.png',
-    statusSynchro: config.pluginDir + 'status_synchro.png',
-    layerMonitor: config.pluginDir + 'layer_monitor.png',
-    layerShield: config.pluginDir + 'layer_shield.png',
-    ecs_unlogin: config.assetDir + 'ecs_unlogin.png',
-    ecs_login: config.assetDir + 'ecs_login.png',
-    ecs_unselect: config.assetDir + 'ecs_unselect.png',
-    aliyun32os_s: config.comDir + 'aliyun32os_s.png',
-    aliyun32os_s2x: config.comDir + 'aliyun32os_s@2x.png',
-    aliyun64os_s: config.comDir + 'aliyun64os_s.png',
-    aliyun64os_s2x: config.comDir + 'aliyun64os_s@2x.png',
-    aliyun32os_c: config.comDir + 'aliyun32os_c.png',
-    aliyun32os_c2x: config.comDir + 'aliyun32os_c@2x.png',
-    aliyun64os_c: config.comDir + 'aliyun64os_c.png',
-    aliyun64os_c2x: config.comDir + 'aliyun64os_c@2x.png',
-    cent32os_s: config.comDir + 'cent32os_s.png',
-    cent32os_s2x: config.comDir + 'cent32os_s@2x.png',
-    cent64os_s: config.comDir + 'cent64os_s.png',
-    cent64os_s2x: config.comDir + 'cent64os_s@2x.png',
-    cent32os_c: config.comDir + 'cent32os_c.png',
-    cent32os_c2x: config.comDir + 'cent32os_c@2x.png',
-    cent64os_c: config.comDir + 'cent64os_c.png',
-    cent64os_c2x: config.comDir + 'cent64os_c@2x.png',
-    debian64os_s: config.comDir + 'debian64os_s.png',
-    debian64os_s2x: config.comDir + 'debian64os_s@2x.png',
-    debian64os_c: config.comDir + 'debian64os_c.png',
-    debian64os_c2x: config.comDir + 'debian64os_c@2x.png',
-    ubuntu32os_s: config.comDir + 'ubuntu32os_s.png',
-    ubuntu32os_s2x: config.comDir + 'ubuntu32os_s@2x.png',
-    ubuntu64os_s: config.comDir + 'ubuntu64os_s.png',
-    ubuntu64os_s2x: config.comDir + 'ubuntu64os_s@2x.png',
-    ubuntu32os_c: config.comDir + 'ubuntu32os_c.png',
-    ubuntu32os_c2x: config.comDir + 'ubuntu32os_c@2x.png',
-    ubuntu64os_c: config.comDir + 'ubuntu64os_c.png',
-    ubuntu64os_c2x: config.comDir + 'ubuntu64os_c@2x.png',
-    win32os_s: config.comDir + 'win32os_s.png',
-    win32os_s2x: config.comDir + 'win32os_s@2x.png',
-    win64os_s: config.comDir + 'win64os_s.png',
-    win64os_s2x: config.comDir + 'win64os_s@2x.png',
-    win32os_c: config.comDir + 'win32os_c.png',
-    win32os_c2x: config.comDir + 'win32os_c@2x.png',
-    win64os_c: config.comDir + 'win64os_c.png',
-    win64os_c2x: config.comDir + 'win64os_c@2x.png',
-    unknownos_s: config.comDir + 'unknownos_s.png',
-    unknownos_s2x: config.comDir + 'unknownos_s@2x.png',
-    unknownos_c: config.comDir + 'unknownos_c.png',
-    unknownos_c2x: config.comDir + 'unknownos_c@2x.png'
-  },
-  regionCode: {
-    'cn-qingdao': 'cn-qingdao-cm5-a01',
-    'cn-hangzhou': 'cn-hangzhou-dg-a01',
-    'cn-beijing': 'cn-beijing-btc-a01',
-    'cn-hongkong': 'cn-hongkong-am4-c04'
-  }
+    maxAchitecture: 5,
+    priceurl: priceurl,
+    loginurl: {
+        ali: ali,
+        qq: qq,
+        weibo: weibo
+    },
+    exportExcelUrl: exportExcelUrl,
+    loadImages: {
+        logoGray: config.assetDir + 'logo-gray.png',
+        backGrid: config.assetDir + 'bg-grid.png',
+        ecsIcon: config.comDir + 'ecs80.png',
+        rdsIcon: config.comDir + 'rds80.png',
+        slbIcon: config.comDir + 'slb80.png',
+        ossIcon: config.comDir + 'oss80.png',
+        cdnIcon: config.comDir + 'cdn80.png',
+        ocsIcon: config.comDir + 'ocs80.png',
+        otsIcon: config.comDir + 'ots80.png',
+        odpsIcon: config.comDir + 'odps80.png',
+        yundunIcon: config.comDir + 'yundun80.png',
+        jiankongIcon: config.comDir + 'jiankong80.png',
+        diyIcon: config.comDir + 'diy80.png',
+        diy1Icon: config.comDir + 'diyserver.png',
+        diy2Icon: config.comDir + 'diydb.png',
+        diy3Icon: config.comDir + 'diystorage.png',
+        ecsesIcon: config.comDir + 'ecses80.png',
+        customIcon: config.comDir + 'customImage.png',
+        lineInfoIcon: config.comDir + 'line-info.png',
+        lineInfoIcon_dark: config.comDir + 'line-info-dark.png',
+        mqsIcon: config.comDir + 'mqs80.png',
+        oasIcon: config.comDir + 'oas80.png',
+        opensearchIcon: config.comDir + 'opensearch80.png',
+        ptsIcon: config.comDir + 'pts80.png',
+        slsIcon: config.comDir + 'sls80.png',
+        ecsLittle: config.comDir + 'ecs64.png',
+        rdsLittle: config.comDir + 'rds64.png',
+        slbLittle: config.comDir + 'slb64.png',
+        ossLittle: config.comDir + 'oss64.png',
+        cdnLittle: config.comDir + 'cdn64.png',
+        ocsLittle: config.comDir + 'ocs64.png',
+        otsLittle: config.comDir + 'ots64.png',
+        odpsLittle: config.comDir + 'odps64.png',
+        yundunLittle: config.comDir + 'yundun64.png',
+        jiankongLittle: config.comDir + 'jiankong64.png',
+        diyLittle: config.comDir + 'diy64.png',
+        mqsLittle: config.comDir + 'mqs64.png',
+        oasLittle: config.comDir + 'oas64.png',
+        opensearchLittle: config.comDir + 'opensearch64.png',
+        ptsLittle: config.comDir + 'pts64.png',
+        slsLittle: config.comDir + 'sls64.png',
+        diskCloud: config.diskDir + 'ico-cloud.png',
+        diskEphemeral: config.diskDir + 'ico-ephemeral.png',
+        diskSsd: config.diskDir + 'ico-ssd.png',
+        diskSnapshot: config.diskDir + 'ico_snapshot.png',
+        diskSnapshot: config.diskDir + 'ico_snapshot.png',
+        centosIcon: config.pluginDir + 'os_centos.png',
+        debianIcon: config.pluginDir + 'os_debian.png',
+        redhatIcon: config.pluginDir + 'os_redhat.png',
+        ubuntuIcon: config.pluginDir + 'os_ubuntu.png',
+        windowsIcon: config.pluginDir + 'os_windows.png',
+        customIcon: config.pluginDir + 'os_custom.png',
+        layerOperate: config.pluginDir + 'ico_option_s.png',
+        layerConnect: config.pluginDir + 'ico_line_s.png',
+        layerResize: config.pluginDir + 'ico_resize_s.png',
+        layerInfo: config.pluginDir + 'ico_info_s.png',
+        comHelp: config.pluginDir + 'ico_help_s.png',
+        comWDisk: config.pluginDir + 'ico_wdisk_s.png',
+        comMore: config.pluginDir + 'ico_more_s.png',
+        comStarting: config.pluginDir + 'ico_status_starting.png',
+        comRunning: config.pluginDir + 'ico_status_runing.png',
+        comStopping: config.pluginDir + 'ico_status_stopping.png',
+        comStopped: config.pluginDir + 'ico_status_stop.png',
+        comUnbound: config.pluginDir + 'ico_status_unbound.png',
+        com32bits: config.pluginDir + 'ico_32bit_s.png',
+        com64bits: config.pluginDir + 'ico_64bit_s.png',
+        com32bitc: config.pluginDir + 'ico_32bit_c.png',
+        com64bitc: config.pluginDir + 'ico_64bit_c.png',
+        comHasCode: config.pluginDir + 'ico_code_s.png',
+        comBandwidth: config.pluginDir + 'ico_bandwidth_s.png',
+        comBDisk: config.pluginDir + 'ico_bdisk_s.png',
+        comCode: config.pluginDir + 'ico_nocode_s.png',
+        comNoBind: config.pluginDir + 'ico_nobind_s.png',
+        comNoBit: config.pluginDir + 'ico_nobit_s.png',
+        comNoSys: config.pluginDir + 'ico_nosys_s.png',
+        comNoSysNoBit: config.pluginDir + 'ico_nosys_nobit_s.png',
+        statusEdit: config.pluginDir + 'status_edit.png',
+        statusSynchro: config.pluginDir + 'status_synchro.png',
+        layerMonitor: config.pluginDir + 'layer_monitor.png',
+        layerShield: config.pluginDir + 'layer_shield.png',
+        ecs_unlogin: config.assetDir + 'ecs_unlogin.png',
+        ecs_login: config.assetDir + 'ecs_login.png',
+        ecs_unselect: config.assetDir + 'ecs_unselect.png',
+        aliyun32os_s: config.comDir + 'aliyun32os_s.png',
+        aliyun32os_s2x: config.comDir + 'aliyun32os_s@2x.png',
+        aliyun64os_s: config.comDir + 'aliyun64os_s.png',
+        aliyun64os_s2x: config.comDir + 'aliyun64os_s@2x.png',
+        aliyun32os_c: config.comDir + 'aliyun32os_c.png',
+        aliyun32os_c2x: config.comDir + 'aliyun32os_c@2x.png',
+        aliyun64os_c: config.comDir + 'aliyun64os_c.png',
+        aliyun64os_c2x: config.comDir + 'aliyun64os_c@2x.png',
+        cent32os_s: config.comDir + 'cent32os_s.png',
+        cent32os_s2x: config.comDir + 'cent32os_s@2x.png',
+        cent64os_s: config.comDir + 'cent64os_s.png',
+        cent64os_s2x: config.comDir + 'cent64os_s@2x.png',
+        cent32os_c: config.comDir + 'cent32os_c.png',
+        cent32os_c2x: config.comDir + 'cent32os_c@2x.png',
+        cent64os_c: config.comDir + 'cent64os_c.png',
+        cent64os_c2x: config.comDir + 'cent64os_c@2x.png',
+        debian64os_s: config.comDir + 'debian64os_s.png',
+        debian64os_s2x: config.comDir + 'debian64os_s@2x.png',
+        debian64os_c: config.comDir + 'debian64os_c.png',
+        debian64os_c2x: config.comDir + 'debian64os_c@2x.png',
+        ubuntu32os_s: config.comDir + 'ubuntu32os_s.png',
+        ubuntu32os_s2x: config.comDir + 'ubuntu32os_s@2x.png',
+        ubuntu64os_s: config.comDir + 'ubuntu64os_s.png',
+        ubuntu64os_s2x: config.comDir + 'ubuntu64os_s@2x.png',
+        ubuntu32os_c: config.comDir + 'ubuntu32os_c.png',
+        ubuntu32os_c2x: config.comDir + 'ubuntu32os_c@2x.png',
+        ubuntu64os_c: config.comDir + 'ubuntu64os_c.png',
+        ubuntu64os_c2x: config.comDir + 'ubuntu64os_c@2x.png',
+        win32os_s: config.comDir + 'win32os_s.png',
+        win32os_s2x: config.comDir + 'win32os_s@2x.png',
+        win64os_s: config.comDir + 'win64os_s.png',
+        win64os_s2x: config.comDir + 'win64os_s@2x.png',
+        win32os_c: config.comDir + 'win32os_c.png',
+        win32os_c2x: config.comDir + 'win32os_c@2x.png',
+        win64os_c: config.comDir + 'win64os_c.png',
+        win64os_c2x: config.comDir + 'win64os_c@2x.png',
+        unknownos_s: config.comDir + 'unknownos_s.png',
+        unknownos_s2x: config.comDir + 'unknownos_s@2x.png',
+        unknownos_c: config.comDir + 'unknownos_c.png',
+        unknownos_c2x: config.comDir + 'unknownos_c@2x.png'
+    },
+    regionCode: {
+        'cn-qingdao': 'cn-qingdao-cm5-a01',
+        'cn-hangzhou': 'cn-hangzhou-dg-a01',
+        'cn-beijing': 'cn-beijing-btc-a01',
+        'cn-hongkong': 'cn-hongkong-am4-c04'
+    }
 };

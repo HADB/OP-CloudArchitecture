@@ -3,6 +3,6 @@ var Api;
 
 Api = {};
 
-Api.createPublicIp = function(_self) {};
+Api.createPublicIp = function (_self) { };
 
-Api.destroyPublicIp = function(_self) {};
+Api.destroyPublicIp = function (_self) { };

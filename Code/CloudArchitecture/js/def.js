@@ -6,195 +6,195 @@ $.cookie.defaults.expires = 1;
 $.cookie.defaults.path = '/';
 
 def = {
-  color: {
-    lightGray: '#cbd1d9',
-    orange: '#D38727',
-    gray: '#a1adc2',
-    gray1: 'dbe3ef',
-    green: '#00CC33',
-    red: '#ff0000',
-    orange1: '#f39c12',
-    orange2: '#fff0d7',
-    yearColor: 'black',
-    amountColor: 'blue',
-    guideLine: 'orange'
-  },
-  lineType: {
-    bright: 1,
-    rightAngle: 2
-  },
-  lineArrow: {
-    length: 20,
-    center: 15,
-    angle: 25
-  },
-  gridMin: 10,
-  gridMax: 100,
-  cap: 5,
-  lineArm: 15,
-  guideDeviation: 3,
-  stage: {
-    marginH: 180,
-    marginV: 45
-  },
-  title: {
-    w: 100,
-    h: 22
-  },
-  navImg: {
-    w: 160,
-    h: 120,
-    offset: 100
-  },
-  tpl: {
-    com: 30,
-    layerX: 150,
-    layerY: 75
-  },
-  layer: {
-    width: 300,
-    minWidth: 220,
-    height: 150,
-    innerOffset: 50,
-    outerOffset: 0,
-    xRadius: 150,
-    yRadius: 75,
-    resizeOffset: 15,
-    cornerR: 13
-  },
-  component: {
-    w: 66,
-    h: 78,
-    width: 80,
-    height: 80,
-    outerWidth: 100,
-    outerHeight: 100,
-    radius: 47,
-    corner: {
-      width: 16,
-      height: 16,
-      radius: 13
+    color: {
+        lightGray: '#cbd1d9',
+        orange: '#D38727',
+        gray: '#a1adc2',
+        gray1: 'dbe3ef',
+        green: '#00CC33',
+        red: '#ff0000',
+        orange1: '#f39c12',
+        orange2: '#fff0d7',
+        yearColor: 'black',
+        amountColor: 'blue',
+        guideLine: 'orange'
     },
-    leftTopCorner: {
-      x: 0,
-      y: 0,
-      icox: -8,
-      icoy: -8
+    lineType: {
+        bright: 1,
+        rightAngle: 2
     },
-    rightTopCorner: {
-      x: 100,
-      y: 0,
-      icox: -8,
-      icoy: -8
+    lineArrow: {
+        length: 20,
+        center: 15,
+        angle: 25
     },
-    leftBottomCorner: {
-      x: 0,
-      y: 100,
-      icox: -8,
-      icoy: -8
+    gridMin: 10,
+    gridMax: 100,
+    cap: 5,
+    lineArm: 15,
+    guideDeviation: 3,
+    stage: {
+        marginH: 180,
+        marginV: 45
     },
-    rightBottomCorner: {
-      x: 100,
-      y: 100,
-      icox: -8,
-      icoy: -8
-    }
-  },
-  osTpl: {
-    width: 50,
-    height: 50
-  },
-  diskTpl: {
-    width: 60,
-    height: 64
-  },
-  disk: {
-    maxSize: 2048
-  },
-  os: {
-    0: '',
-    1: "CentOS 5.8 64位",
-    2: "CentOS 6.3 64位",
-    3: "Ubuntu 12.04 64位",
-    4: "Debian 6.0.6 64位",
-    5: "Aliyun Linux 5.7 64位",
-    6: "Windows Server 2003 R2 标准版 SP2 32位中文版",
-    7: "Windows Server 2003 R2 标准版 SP2 64位英文版",
-    8: "Windows Server 2003 R2 标准版 SP2 64位中文版",
-    9: "Windows Server 2008 标准版 SP2 32位中文版",
-    10: "Windows Server 2008 R2 标准版 SP1 64位中文版"
-  },
-  osStr: {
-    0: '',
-    1: "centos5u8_64_20G_aliaegis_20131231.vhd",
-    2: "centos6u3_64_20G_aliaegis_20130816.vhd",
-    3: "ubuntu1204_64_20G_aliaegis_20131121.vhd",
-    4: "debian606_64_20G_aliaegis_20131231.vhd",
-    5: "rhel5u7_64_20G_aliaegis_20131231.vhd",
-    6: "win2003_32_stand_r2_cn_40G_aliaegis_20131231.vhd",
-    7: "win2003_64_stand_r2_en_40G_aliaegis_20140102.vhd",
-    8: "win2003_64_stand_r2_cn_40G_aliaegis_20140102.vhd",
-    9: "win2008_32_stand_sp2_cn_40G_alibase_20140102.vhd",
-    10: "win2008_64_stand_r2_cn_40G_aliaegis_20140102.vhd"
-  },
-  instanceType: {
-    '1-0.5': 'ecs.t1.xsmall',
-    '1-1': 'ecs.t1.small',
-    '1-2': 'ecs.s1.small',
-    '1-4': 'ecs.s1.medium',
-    '2-2': 'ecs.s2.small',
-    '2-4': 'ecs.s2.large',
-    '2-8': 'ecs.s2.xlarge',
-    '4-8': 'ecs.s3.large',
-    '4-16': 'ecs.m1.medium',
-    '8-8': 'ecs.c1.small',
-    '8-16': 'ecs.c1.large',
-    '8-32': 'ecs.m1.xlarge',
-    '16-64': 'ecs.c2.xlarge',
-    '1-1.5': 'ecs.s1.xsmall',
-    '2-1.5': 'ecs.s2.xsmall',
-    '2-2.5': 'ecs.s2.medium',
-    '4-4': 'ecs.s3.medium',
-    '4-12': 'ecs.m1.small',
-    '8-12': 'ecs.c1.medium',
-    '8-24': 'ecs.m1.large'
-  },
-  counterInstanceType: {
-    'ecs.t1.xsmall': '1-0.5',
-    'ecs.t1.small': '1-1',
-    'ecs.s1.small': '1-2',
-    'ecs.s1.medium': '1-4',
-    'ecs.s2.small': '2-2',
-    'ecs.s2.large': '2-4',
-    'ecs.s2.xlarge': '2-8',
-    'ecs.s3.large': '4-8',
-    'ecs.m1.medium': '4-16',
-    'ecs.c1.small': '8-8',
-    'ecs.c1.large': '8-16',
-    'ecs.m1.xlarge': '8-32',
-    'ecs.c2.xlarge': '16-64',
-    'ecs.s1.xsmall': '1-1.5',
-    'ecs.s2.xsmall': '2-1.5',
-    'ecs.s2.medium': '2-2.5',
-    'ecs.s3.medium': '4-4',
-    'ecs.m1.small': '4-12',
-    'ecs.c1.medium': '8-12',
-    'ecs.m1.large': '8-24'
-  },
-  dbName: {
-    mysql: 'MySQL',
-    mssql: 'SQLServer'
-  },
-  imgSizePre: {
-    width: 500,
-    height: 350
-  },
-  imgSizeMaster: {
-    width: 300,
-    height: 300
-  },
-  page: {
-    num: 10
-  },
-  ownerAccount: $.cookie('loginMail' || 'undefined')
+    title: {
+        w: 100,
+        h: 22
+    },
+    navImg: {
+        w: 160,
+        h: 120,
+        offset: 100
+    },
+    tpl: {
+        com: 30,
+        layerX: 150,
+        layerY: 75
+    },
+    layer: {
+        width: 300,
+        minWidth: 220,
+        height: 150,
+        innerOffset: 50,
+        outerOffset: 0,
+        xRadius: 150,
+        yRadius: 75,
+        resizeOffset: 15,
+        cornerR: 13
+    },
+    component: {
+        w: 66,
+        h: 78,
+        width: 80,
+        height: 80,
+        outerWidth: 100,
+        outerHeight: 100,
+        radius: 47,
+        corner: {
+            width: 16,
+            height: 16,
+            radius: 13
+        },
+        leftTopCorner: {
+            x: 0,
+            y: 0,
+            icox: -8,
+            icoy: -8
+        },
+        rightTopCorner: {
+            x: 100,
+            y: 0,
+            icox: -8,
+            icoy: -8
+        },
+        leftBottomCorner: {
+            x: 0,
+            y: 100,
+            icox: -8,
+            icoy: -8
+        },
+        rightBottomCorner: {
+            x: 100,
+            y: 100,
+            icox: -8,
+            icoy: -8
+        }
+    },
+    osTpl: {
+        width: 50,
+        height: 50
+    },
+    diskTpl: {
+        width: 60,
+        height: 64
+    },
+    disk: {
+        maxSize: 2048
+    },
+    os: {
+        0: '',
+        1: "CentOS 5.8 64位",
+        2: "CentOS 6.3 64位",
+        3: "Ubuntu 12.04 64位",
+        4: "Debian 6.0.6 64位",
+        5: "Aliyun Linux 5.7 64位",
+        6: "Windows Server 2003 R2 标准版 SP2 32位中文版",
+        7: "Windows Server 2003 R2 标准版 SP2 64位英文版",
+        8: "Windows Server 2003 R2 标准版 SP2 64位中文版",
+        9: "Windows Server 2008 标准版 SP2 32位中文版",
+        10: "Windows Server 2008 R2 标准版 SP1 64位中文版"
+    },
+    osStr: {
+        0: '',
+        1: "centos5u8_64_20G_aliaegis_20131231.vhd",
+        2: "centos6u3_64_20G_aliaegis_20130816.vhd",
+        3: "ubuntu1204_64_20G_aliaegis_20131121.vhd",
+        4: "debian606_64_20G_aliaegis_20131231.vhd",
+        5: "rhel5u7_64_20G_aliaegis_20131231.vhd",
+        6: "win2003_32_stand_r2_cn_40G_aliaegis_20131231.vhd",
+        7: "win2003_64_stand_r2_en_40G_aliaegis_20140102.vhd",
+        8: "win2003_64_stand_r2_cn_40G_aliaegis_20140102.vhd",
+        9: "win2008_32_stand_sp2_cn_40G_alibase_20140102.vhd",
+        10: "win2008_64_stand_r2_cn_40G_aliaegis_20140102.vhd"
+    },
+    instanceType: {
+        '1-0.5': 'ecs.t1.xsmall',
+        '1-1': 'ecs.t1.small',
+        '1-2': 'ecs.s1.small',
+        '1-4': 'ecs.s1.medium',
+        '2-2': 'ecs.s2.small',
+        '2-4': 'ecs.s2.large',
+        '2-8': 'ecs.s2.xlarge',
+        '4-8': 'ecs.s3.large',
+        '4-16': 'ecs.m1.medium',
+        '8-8': 'ecs.c1.small',
+        '8-16': 'ecs.c1.large',
+        '8-32': 'ecs.m1.xlarge',
+        '16-64': 'ecs.c2.xlarge',
+        '1-1.5': 'ecs.s1.xsmall',
+        '2-1.5': 'ecs.s2.xsmall',
+        '2-2.5': 'ecs.s2.medium',
+        '4-4': 'ecs.s3.medium',
+        '4-12': 'ecs.m1.small',
+        '8-12': 'ecs.c1.medium',
+        '8-24': 'ecs.m1.large'
+    },
+    counterInstanceType: {
+        'ecs.t1.xsmall': '1-0.5',
+        'ecs.t1.small': '1-1',
+        'ecs.s1.small': '1-2',
+        'ecs.s1.medium': '1-4',
+        'ecs.s2.small': '2-2',
+        'ecs.s2.large': '2-4',
+        'ecs.s2.xlarge': '2-8',
+        'ecs.s3.large': '4-8',
+        'ecs.m1.medium': '4-16',
+        'ecs.c1.small': '8-8',
+        'ecs.c1.large': '8-16',
+        'ecs.m1.xlarge': '8-32',
+        'ecs.c2.xlarge': '16-64',
+        'ecs.s1.xsmall': '1-1.5',
+        'ecs.s2.xsmall': '2-1.5',
+        'ecs.s2.medium': '2-2.5',
+        'ecs.s3.medium': '4-4',
+        'ecs.m1.small': '4-12',
+        'ecs.c1.medium': '8-12',
+        'ecs.m1.large': '8-24'
+    },
+    dbName: {
+        mysql: 'MySQL',
+        mssql: 'SQLServer'
+    },
+    imgSizePre: {
+        width: 500,
+        height: 350
+    },
+    imgSizeMaster: {
+        width: 300,
+        height: 300
+    },
+    page: {
+        num: 10
+    },
+    ownerAccount: $.cookie('loginMail' || 'undefined')
 };

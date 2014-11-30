@@ -4,8 +4,8 @@ var entities;
 entities = {};
 
 entities = {
-  layers: [],
-  components: [],
-  lines: [],
-  elements: []
+    layers: [],
+    components: [],
+    lines: [],
+    elements: []
 };
