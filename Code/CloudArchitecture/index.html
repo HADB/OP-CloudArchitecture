@@ -199,52 +199,23 @@
                 <a href="javascript:void(0)" id="searchBtn" title="查找组件" class="topBtn topUserBtn glyphicon glyphicon-search"></a>
                 <a href="javascript:void(0)" id="prevBtn" title="上一步" class="topBtn topUserBtn"><img src="img/top_prev.png"></a>
                 <a href="javascript:void(0)" id="nextBtn" title="下一步" class="topBtn topUserBtn"><img src="img/top_next.png"></a>
-                <!-- <a href="javascript:void(0)" id="showComTipBtn" title="显示所有组件信息" class="topBtn topUserBtn glyphicon glyphicon-comment"></a> -->
-                <!-- <a href="javascript:void(0)" id="monitorBtn" title="监控" data-type="rightAngle" class="topBtn topUserBtn " style="display:none"><img src="img/top_monitor.png"></a> -->
-                <!-- <a href="javascript:void(0)" id="saveIpModify" title="保存 IP 修改" data-type="rightAngle" class="topBtn topUserBtn"><img src="img/top_save.png"></a> -->
-                <!-- <a href="javascript:void(0)" id="doScriptTopBtn" title="批量操作" class="topBtn topUserBtn dnone"><img src="img/top_advance.png"></a> -->
-                <!-- <div class="dropdown fleft" id='scriptBtn' style="display:none">
-                    <div class="dropdown">
-                      <a href="javascript:void(0)" class="topBtn topUserBtn" style="width:60px;" id="advanceOpa" role="button" data-toggle="dropdown" data-target="#" title="批处理">
-                        <img src="img/top_advance.png" style="margin-left:-30px">
-                        <span id="doScript_arrow" class="fleft css_arrow arrow_down"></span>
-                      </a>
-                    </div>
-                    <a data-toggle="dropdown"></a>
-                    <ul id="advanceOpaMenu" class="dropdown-menu" role="menu" aria-labelledby="advanceOpa" style="opacity:1;top:39px;">
-                        <li>
-                          <a id="doECSBatchTopBtn" title="ECS批处理" data-val="agent" href="javascript:void(0)">ECS批处理</a>
-                        </li>
-                        <li>
-                          <a id="doScriptTopBtn" title="公网方式执行脚本" data-val='normal' href="javascript:void(0)">批量执行脚本(公网)</a>
-                        </li>
-                        <li>
-                          <a id="doAgentScriptTopBtn" title="Agent方式执行脚本" data-val="agent" href="javascript:void(0)">批量执行脚本(Agent)</a>
-                        </li>
-                    </ul>
-                </div> -->
-                <!-- <a href="javascript:void(0)" id="lineTypeBtn" title="转为折线" data-type="rightAngle" class="topBtn topUserBtn"><img id="img_linestyle" src="img/top_curveline.png"></a> -->
+
                 <a href="javascript:void(0)" id="saveModelBtn" title="保存为公共模版" class="topBtn" style="display:none"><img src="img/top_save.png"></a>
                 <a href="javascript:void(0)" id="saveBtn" title="保存" class="topBtn"><img src="img/top_save.png"></a>
                 <a href="javascript:void(0)" id="structListModelBtn" title="读取场景" class="topBtn topUserBtn" style="display:none;">
                     <img src="img/top_struct_list.png">
                     <span id="structlistNum" class="fright comListNum">0</span>
                 </a>
-                <!-- <a href="javascript:void(0)" id="comListModelBtn" title="同步阿里云产品信息" class="topBtn topUserBtn hasAliList" style="display:none;">
-                  <img src="img/top_sync_aliyun.png">
-                  <span id="comListNum" class="fright comListNum">0</span>
-                </a> -->
+
                 <a href="#" id="previewBtn" title="预览" style='width:60px;' class="topBtn hasPreview" data-toggle="modal" data-target="#preview">
-                    <!-- <span class="comListNum"></span> -->
                     <img src="img/top_go.png">
                 </a>
-                <!-- <a href="#" id="msgBtn" title="消息" class="topBtn newMsg" data-toggle="modal" data-target="#preview"><img src="img/top_msg.png"></a> -->
+
                 <a href="javascript:void(0)" id="notifyBtn" title="消息提醒" class='fleft' style="display:none;margin-left:15px;">
-                    <!-- <img src="img/top_msg.png" style='margin-top:16px;'> 去掉邮箱 icon -->
-                    <!-- <span id="notifylistNum" class="fright notifylistNum">0</span> 去掉消息提醒 -->
+
                 </a>
-                <!-- <a href="#regModal" id="myreg" title="注册" role="button" data-toggle="modal" class="topBtn topUserBtn" style="display:none">注册</a> -->
-                <a href="#loginModal" id="mylogin" title="登录" role="button" data-toggle="modal" class="topBtn topUserBtn"><img src="img/top_login.png"></a><!-- href="#loginModal" -->
+
+                <a href="#loginModal" id="mylogin" title="登录" role="button" data-toggle="modal" class="topBtn topUserBtn"><img src="img/top_login.png"></a>
                 <div id="userinfoBar" class="dropdown fright">
                     <div class="dropdown">
                         <a href="javascript:void(0)" id="userinfo" title="登出" class="userinfo" style="display:none" role="button" data-toggle="dropdown" data-target="#"></a>
@@ -252,10 +223,6 @@
                     </div>
                     <a data-toggle="dropdown"></a>
                     <ul id="userinfoMenu" class="dropdown-menu" role="menu" aria-labelledby="userinfo" style="opacity:1;top:39px;">
-                        <!-- <li><a href="javascript:void(0)" id="showUserinfo">通知中心</a></li>
-                        <li><a href="javascript:void(0)" id="showLoginfo">操作日志</a></li>
-                        <li><a href="javascript:void(0)" id="bindMail">绑定邮箱</a></li>
-                        <li><a href="javascript:void(0)" id="bindRam">ram授权</a></li> -->
                         <li><a href="javascript:void(0)" id="mainLoginOut">退出</a></li>
                     </ul>
                 </div>
@@ -558,14 +525,7 @@
                         <div class="remark-content" style="height:100%;width:100%">
                             <div class="title-height row">
                                 <div class="col-md-4 title-height font14 rightBoardTitleDepth paddingRight0">数据库类型：</div>
-                                <!-- <div class="col-md-8 title-height"> -->
-                                <!-- <label class="col-md-4 font12 paddingLeft0">
-                                    <input type="radio" name="rds-sql-type" id="rds-sql-type-optionsRadios1" value="mysql" data-val="mysql" checked="checked"> MySQL
-                                </label>
-                                <label class="col-md-4 font12 paddingLeft0">
-                                    <input type="radio" name="rds-sql-type" id="rds-sql-type-optionsRadios2" value="mssql" data-val="mssql"> SQLServer
-                                </label> -->
-                                <!-- </div> -->
+
                                 <div class="col-md-4 paddingLeft0 paddingRight0">
                                     <select id="rds-sql-type" class="form-control form-select">
                                         <option value="mysql">MySQL</option>
@@ -1508,15 +1468,7 @@
                             <input type="text" class="login-field long-input form-control input-lg" value="" placeholder="Access Key Secret" id="ram-accessKeySec">
                             <label class="login-field-icon fui-lock-16" for="ram-accessKeySec"></label>
                         </div>
-                        <!-- <div class="control-group">
-                          <input type="text" class="login-field long-input form-control input-lg" value="" placeholder="login Mail" id="aliLoginMail">
-                          <label class="login-field-icon fui-lock-16" for="aliLoginMail"></label>
-                        </div> -->
-                        <!-- <div class="row control-group">
-                          <label class="col-md-3 login-field-icon fui-lock-16" for="qingdao"><input type="radio" name="ram-regionCheck" value="cn-qingdao" id="ram-qingdao" />青岛节点</label>
-                          <label class="col-md-3 login-field-icon fui-lock-16" for="hangzhou"><input type="radio" name="ram-regionCheck" value="cn-hangzhou" id="ram-hangzhou" />杭州节点</label>
-                          <label class="col-md-3 login-field-icon fui-lock-16" for="beijing"><input type="radio" name="ram-regionCheck" value="cn-beijing" id="ram-beijing" />北京节点</label>
-                        </div> -->
+
                         <div class="row control-group">
                             <a href='javascript:void(0)' target='_blank'>你也可以通过下载授权书,自己安装授权.</a>
                         </div>
@@ -1604,9 +1556,9 @@
                                 <div class="title-height" style="margin-bottom:10px;">
                                     <label><input type="radio" name="rd_selectLayer" data-value="oldlayer" /><span style="padding-left:5px;">放入已有层中</span></label>
                                 </div>
-                                <!-- <div class="container_selectLayer_layerNameList"> -->
+
                                 <div>
-                                    <!-- <ul id="selectLayer_layerNameList" class="selectLayer_layerNameList"></ul> -->
+
                                     <div class="font14"><span style="padding-right:10px;">选择层：</span><select style="width:80%;display:inline-block;padding:6px 12px;height:34px;" id="selectLayer_layerNameList" class='form-control form-select'></select></div>
                                 </div>
                             </div>
@@ -1628,40 +1580,6 @@
         </div>
     </div>
 
-    <!-- selectLayer -->
-    <!-- <div id="selectLayerModel" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="padding-top:30px;">
-      <div class="modal-dialog" style="width:700px">
-        <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h3 id="myModalLabel">选择层</h3>
-          </div>
-          <div class="modal-body">
-            <div style="height:350px;">
-                <div class="select-newLayer">
-                    <div class="title-height"><label><input type="radio" name="rd_selectLayer" data-value="newlayer" />建立新层</label></div>
-                    <div>层名称:<input type="text" class="form-control" style="width:50%;display:inline-block;" id="selectLayer_layerName" value="未命名层" /></div>
-                </div>
-                <div class="select-oldLayer clearfix">
-                    <div class="title-height">
-                        <label><input type="radio" name="rd_selectLayer" data-value="oldlayer" />放入已有层中</label>
-                    </div>
-                    <div class="container_selectLayer_layerNameList">
-                        <ul id="selectLayer_layerNameList" class="selectLayer_layerNameList"></ul>
-                    </div>
-                </div>
-                <div class="combine-sameEcs title-height"><label><input type="checkbox" id="combineEcs" checked='checked' />将配置相同的组件以复合图标显示</label></div>
-            </div>
-          </div>
-
-          <div class="modal-footer" style="margin-top:0px;">
-            <div id="selectLayerModalError" style="float:left;height:40px;line-height:40px;color:red;"></div>
-            <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">取消</button>
-            <button id="selectLayer" class="btn btn-warning">确定</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <!-- structListModel -->
     <div id="structListModel" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="structListModelLabel" aria-hidden="true">
         <div class="modal-dialog" style="width:750px">
@@ -1696,25 +1614,12 @@
                 <div class="modal-body">
                     <div class="modelFrame">
                         <div id="modelLeftFrame" class="leftFrame">
-                            <ul class="nav nav-pills">
-                                <!-- nav-justified -->
-                                <!-- <li class="title-config active"><a href="#pane1" id="userTabBtn1" data-toggle="tab" class='font12'>通知中心</a></li>
-                                <li><a id="showLog" id="userTabBtn2" href="#pane2" data-toggle="tab" class='font12'>操作日志</a></li>
-                                <li><a href="#pane4" id="userTabBtn4" data-toggle="tab" class='font12'>提醒邮箱</a></li> -->
-                            </ul>
+                            <ul class="nav nav-pills"></ul>
                         </div>
                     </div>
-                    <!-- <div style="width:100%;height:400px;overflow:auto;">
-                      <ul style="width:100%;" id='structListContainer'></ul>
-                    </div> -->
+
                 </div>
-                <!-- <div class="modal-footer" style="margin-top:0px;">
-                  <div id="selectStructModalError" style="float:left;height:40px;line-height:40px;color:#ff0000;padding-left:7px;"></div>
-                  <div class='clearfix'></div>
-                  <button id="delStructBtn" style="margin-left:7px;" class="fleft btn btn-danger">删除</button>
-                  <button id="selectStructBtn" class="btn btn-warning">打开</button>
-                  <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
-                </div> -->
+
             </div>
         </div>
     </div>
@@ -1843,10 +1748,7 @@
                             <input id="timeout_min" type="text" class="form-control input-sm" />
                         </div>
                         <div class="col-md-1 title-height">分</div>
-                        <!-- <div class="col-md-1 title-height paddingLeft0 paddingRight0">
-                            <input id="timeout_sec" type="text" class="form-control input-sm" />
-                        </div>
-                        <div class="col-md-1 title-height">秒</div> -->
+
                     </div>
                 </div>
                 <div class="modal-footer" style="margin-top:0px;">
@@ -1856,7 +1758,7 @@
                     <div id="div_scriptmodelname" class='div_scriptmodelname dnone'>
                         <input type="text" id="scriptmodelname" placeholder="模板名称" class="form-control scriptmodelname" maxlength='15' />
                     </div>
-                    <!-- <div id="doScriptModalError" style="float:left;height:40px;line-height:40px;color:red;margin-left:40px;"></div> -->
+
                     <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">取消</button>
                     <button id="doScript-ok" class="btn btn-warning">确定</button>
                 </div>
@@ -2136,19 +2038,9 @@
                 </div>
                 <div class="modal-body">
                     <div class="login-form">
-                        <!--                 <div class="row clearfix control-group">
-                                            <div class="col-md-2 font12 title-height paddingRight0">数据盘大小:</div>
-                                            <div class="col-md-10 font12 title-height">
-                                                <input type="text" class="form-control input-sm" value="" id="diskname">
-                                            </div>
-                                        </div> -->
+
                         <div class="clear"></div>
-                        <!-- <div class="control-group">
-                          数据盘大小：
-                          <div id="slider_disk"></div>
-                          <div><input type="text" class="login-field long-input form-control" id="txt_disk" /></div>
-                        </div>
-                        <div></div> -->
+
                         <div class="row clearfix">
                             <div class="col-md-2 font12 title-height paddingRight0">数据盘大小:</div>
                             <div style="width:64%" class="col-md-8 font12 title-height paddingRight0">
@@ -2167,34 +2059,13 @@
                         </div>
                         <div class="clear"></div>
                         <div id="diskError" class="labelerror title-height" style="float:left;width:300px;"></div>
-                        <!--                 <div class="fright">
-                                            <button id="btn-createdisk" class="btn btn-warning">确定</button>
-                                            <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
-                                        </div> -->
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- show Log -->
-    <!-- <div id="showLogModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog" style="width:750px;">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h3 id="myModalLabel">查看日志</h3>
-          </div>
-          <div class="modal-body" style="max-height:400px;padding-bottom:0px;">
-            <div id="dShowLog"></div>
-            <input type="hidden" value="1" id="pcur" />
-          </div>
-          <div class="modal-footer" style="margin-top:0px;">
-            <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <!-- show scriptLoginList -->
     <div id="scriptLoginListModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myscriptLoginListModalLabel" aria-hidden="true">
         <div class="modal-dialog" style="width:750px;">
@@ -2545,24 +2416,7 @@
         </table>
     </script>
 
-    <!-- <div class="modal fade" id="task-panel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog" style="width:750px">
-        <div class="modal-content">
-          <div class="modal-header border-bottom-none">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">同步任务</h4>
-          </div>
-          <div class="modal-body task-modal-body">
 
-          </div>
-          <div class="modal-footer border-top-none">
-            <span class="loading"></span>
-            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-            <button type="button" class="btn btn-warning" data-dismiss="modal" id="task-confirm-btn">确认同步</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <div id="layerTpl" class="drag-rect dnone" data-kind="layer"></div>
 
@@ -2591,10 +2445,7 @@
     <script id="preview-tpl" type="text/x-handlebars-template">
         <div id="preview-list-header" class="clearfix">
             <h2 class="title">架构清单</h2>
-            <!--
-            <a id="export-xls" class="preview-list-rel fright">导出Excel文件</a
-            <a id="export-html" href="javascript:void(0);" class="preview-list-rel fright">导出为html</a>
-            -->
+
             <div class="preview-total">总价: &#65509;{{total this}}</div>
         </div>
         {{#if this}}
@@ -2749,7 +2600,7 @@
                     <ul class="nav nav-tabs">
                         <li class="active"><a id='tab-preview-pic' href="#preview-pic" data-href="#preview-pic" data-toggle="tab">架构图</a></li>
                         <li><a id='tab-preview-list' href="#preview-list" data-href="#preview-list" data-toggle="tab">架构清单</a></li>
-                        <!-- <li><span class="comListNum"></span><a id="preview-task-tab" href="#preview-task" data-href="#preview-task" data-toggle="tab">同步任务</a></li> -->
+
                     </ul>
 
                     <div id="preview-body" class="tab-content" style="max-height:500px;height:400px;">
@@ -3234,31 +3085,7 @@
         </div>
     </div>
 
-    <!-- <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalTitle" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="tipsModalTitle">修改连线信息</h4>
-          </div>
-          <div class="modal-body" style="padding-bottom:5px">
-            <div class="form-group">
-              <label class="sr-only" for="line-name">名称:</label>
-              <input type="text" id="line-name" name="line-name" class="form-control" placeholder="请输入连线名称" value="" />
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="line-desc">描述:</label>
-              <textarea type="text" id="line-desc" name="com_name" class="form-control" placeholder="请输入连线描述" value="" style="height:100px"></textarea>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <input type="hidden" id="line-id"/>
-            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-            <button type="button" class="btn btn-primary" id="btn-changeLineInfo">修改</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
+
 
     <script>
         $(function () {
@@ -3315,17 +3142,14 @@
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 <div class="tab-pane active" id="monitorCpuPanel">
-                                    <!-- <div class="monitor-color-tip"><i class="monitor-color monitor-color-yellow"></i> CPU使用率(%)</div> -->
-                                    <!-- canvas id="cpuCanvas" class="monitorCanvas" width="660" height="395"></canvas> -->
+
                                 </div>
                                 <div class="tab-pane" id="monitorIoPanel">
-                                    <!-- <div class="monitor-color-tip"><i class="monitor-color monitor-color-yellow"></i> 读MB/s <i class="monitor-color monitor-color-blue"></i> 写/MB/s</div> -->
-                                    <!-- <canvas id="ioCanvas" class="monitorCanvas" width="660" height="395"></canvas> -->
+
                                     <div class="fleft"><span class="colorYellow">IO写</span><span class="colorBlue">IO读</span></div>
                                 </div>
                                 <div class="tab-pane" id="monitorBwPanel">
-                                    <!-- <div class="monitor-color-tip"><i class="monitor-color monitor-color-yellow"></i> 出网(Kpbs) <i class="monitor-color monitor-color-blue"></i> 入网(Kpbs)</div> -->
-                                    <!-- <canvas id="bwCanvas" class="monitorCanvas" width="660" height="395"></canvas> -->
+
                                     <div class="fleft"><span class="colorYellow">上行</span><span class="colorBlue">下行</span></div>
                                 </div>
                                 <div id="tips-monitor"></div>
@@ -3343,8 +3167,7 @@
         <div class="popover-content">
             <div class="diskListWrap">
                 <ui class="clearfix" id="diskListWrapUI">
-                    <!-- <li><div class="diskListItem"><br>系统盘</div></li>
-                    <li><div class="diskListItem"><br>数据盘</div></li> -->
+
                 </ui>
             </div>
         </div>
@@ -3587,27 +3410,11 @@
                     <h4 class="modal-title" id="mynotifyModalLabel">通知中心</h4>
                 </div>
                 <div class="modal-body">
-
-                    <!-- <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>来自</th>
-                            <th>标题</th>
-                            <th>类型</th>
-                            <th>时间</th>
-                            <th>操作</th>
-                        </tr>
-                    </thead>
-                    <tbody id="notifyTbody"></tbody>
-                    </table> -->
                     <div id="notipagination">
                         <ul class="pagination" id="notipaginationWrap"></ul>
                     </div>
                 </div>
-                <!--       <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
-                      </div> -->
+
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
