@@ -178,6 +178,7 @@
     </script>
 </head>
 <body>
+
     <header id="topbar">
         <div style="display:none">
             <img src="img/task_icon/task_waiting.png" alt="">
@@ -190,13 +191,16 @@
                 <a href="/new" id="logoBtn" class="logoPic" data-content="架构尚未保存，你确定返回架构列表页吗？" data-trigger="confirm">架构云</a>
             </div>
             <div class="title">
-                <!-- 当前项目： --><span id="structname" class='fleft' style='width:140px;'></span>
+                <span id="structname" class='fleft' style='width:140px;'></span>
                 <input type="text" value="" id="structNameInput" style='width:140px;height:25px;line-height:25px;padding:0px 12px;' placeholder='当前项目名称' maxlength='30' class="input dnone form-control font14" />
-            </div><!-- style='width:200px;height:25px;line-height:25px;padding:0px 12px;' -->
+            </div>
         </section>
+
         <section class="fright">
+
             <div class="tool">
                 <a href="javascript:void(0)" id="searchBtn" title="查找组件" class="topBtn topUserBtn glyphicon glyphicon-search"></a>
+                <!--
                 <a href="javascript:void(0)" id="prevBtn" title="上一步" class="topBtn topUserBtn"><img src="img/top_prev.png"></a>
                 <a href="javascript:void(0)" id="nextBtn" title="下一步" class="topBtn topUserBtn"><img src="img/top_next.png"></a>
 
@@ -226,33 +230,39 @@
                         <li><a href="javascript:void(0)" id="mainLoginOut">退出</a></li>
                     </ul>
                 </div>
+                       -->
                 <div id="search-wrap" class="search-wrap control-group">
                     <input type="text" id="search-text" class="form-control" />
                     <a id="searchclosebtn" class="searchclosebtn" href="javascript:void(0)">×</a>
                 </div>
+
             </div>
+            <!--
             <div class="zoombtn">
-                <a id="canvasNavBtn"></a>
-                <a href="javascript:void(0)" id="showComTipBtn" title="显示全部备注" class="canvasNavBtn" style='display:none'></a>
-                <a href="javascript:void(0)" id="canvasExportBtn" title="导出" class="lastzoombtn canvasNavBtn"></a>
-                <div class='zoombtnmask'></div>
-                <div id="canvasNav">
-                    <div class="row">
-                        <div style="position: absolute;top: 0;left: 0;line-height: 35px;padding: 0px 10px;color: #789;">
-                            <a href="javascript:void(0)" id="enlargeBtn" title="放大" class='fleft canvas_btn'><span class="icon-plus"></span></a>
-                            <a href="javascript:void(0)" id="revertBtn" title="还原" class='lastzoombtn fleft canvas_scale'><span id="stageScaleText">100%</span></a>
-                            <a href="javascript:void(0)" id="narrowBtn" title="缩小" class="fleft canvas_btn"><span class="icon-minus"></span></a>
-                        </div>
-                        <div style="position: absolute;top: 0;left: 170px;line-height: 35px;padding: 0px 10px;color: #789;font-size:14px;" class="glyphicon glyphicon-fullscreen" title="全屏显示" id="fullscreen-btn"></div>
-                    </div>
-                    <div id="canvasNavImg">
-                        <div class="img"></div>
-                        <div class="border"></div>
-                    </div>
-                </div>
-            </div>
+                 <a id="canvasNavBtn"></a>
+                 <a href="javascript:void(0)" id="showComTipBtn" title="显示全部备注" class="canvasNavBtn" style='display:none'></a>
+                 <a href="javascript:void(0)" id="canvasExportBtn" title="导出" class="lastzoombtn canvasNavBtn"></a>
+                 <div class='zoombtnmask'></div>
+                 <div id="canvasNav">
+                     <div class="row">
+                         <div style="position: absolute;top: 0;left: 0;line-height: 35px;padding: 0px 10px;color: #789;">
+                             <a href="javascript:void(0)" id="enlargeBtn" title="放大" class='fleft canvas_btn'><span class="icon-plus"></span></a>
+                             <a href="javascript:void(0)" id="revertBtn" title="还原" class='lastzoombtn fleft canvas_scale'><span id="stageScaleText">100%</span></a>
+                             <a href="javascript:void(0)" id="narrowBtn" title="缩小" class="fleft canvas_btn"><span class="icon-minus"></span></a>
+                         </div>
+                         <div style="position: absolute;top: 0;left: 170px;line-height: 35px;padding: 0px 10px;color: #789;font-size:14px;" class="glyphicon glyphicon-fullscreen" title="全屏显示" id="fullscreen-btn"></div>
+                     </div>
+                     <div id="canvasNavImg">
+                         <div class="img"></div>
+                         <div class="border"></div>
+                     </div>
+                 </div>
+             </div>
+                 -->
         </section>
+
     </header>
+
     <div id="left-board" style="display">
         <h3>组件和层</h3>
         <div class="group-content">
@@ -265,64 +275,16 @@
                 <div class="com-name">ECS</div>
             </div>
             <div class="com-div">
-                <div alt="" class="com-tpl com-rds need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="rds" data-placement="right" title="" data-original-title="<div class='tip-wrap'><p>关系型数据库服务（Relational Database Service，简称RDS）是一种稳定可靠、可弹性伸缩的在线数据库服务。</p><p>RDS采用即开即用方式，兼容MySQL、SQL Server两种关系型数据库，并提供数据库在线扩容、备份回滚、性能监测及分析功能。RDS与云服务器搭配使用I/O性能倍增，内网互通避免网络瓶颈。</p></div>"></div>
-                <div class="com-name">RDS</div>
-            </div>
-            <div class="com-div">
-                <div alt="" class="com-tpl com-oss need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="oss" data-placement="right" title="" data-original-title="<div class='tip-wrap'>此图标表示OSS Bucket。Bucket 是 OSS 上的命名空间,每个 Bucket 中可以存储任意数量的 Object,但 Bucket 本身并不直接包含任何数据。Bucket 相当于单机系统中的一块硬盘,而 Object 相当于硬盘 中存放的文件。在此一个组件图标即代表一个Bucket命名空间</div>"></div>
-                <div class="com-name">OSS</div>
-            </div>
-            <div class="com-div">
                 <div alt="" class="com-tpl com-slb need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="slb" data-placement="right" title="" data-original-title="<div class='tip-wrap'><p>负载均衡（Server Load Balancer，简称SLB）是对多台云服务器进行流量分发的负载均衡服务。</p><p>SLB可以通过流量分发扩展应用系统对外的服务能力，通过消除单点故障提升应用系统的可用性。</p></div>"></div>
                 <div class="com-name">SLB</div>
-            </div>
-            <div class="com-div">
-                <div alt="" class="com-tpl com-ocs need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="ocs" data-placement="right" title="" data-original-title="<div class='tip-wrap'>开放缓存服务( Open Cache Service，简称OCS）为在线缓存服务，实现热点数据的快速响应及数据的持久化保存，OCS支持Key-Value的数据结构，兼容Memcached协议的客户端都可与服务端通信。OCS支持即开即用的方式快速部署，对于动态Web、APP应用，可通过缓存服务减轻对数据库的压力，从而提高网站整体的响应速度。</div>"></div>
-                <div class="com-name">OCS</div>
             </div>
             <div class="com-div">
                 <div alt="" class="com-tpl com-cdn need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="cdn" data-placement="right" title="" data-original-title="<div class='tip-wrap'>CDN</div>"></div>
                 <div class="com-name">CDN</div>
             </div>
             <div class="com-div com-adv">
-                <div alt="" class="com-tpl com-ots need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="ots" data-placement="right" title="" data-original-title="<div class='tip-wrap'><p>OTS</p></div>"></div>
-                <div class="com-name">OTS</div>
-            </div>
-            <div class="com-div com-adv">
-                <div alt="" class="com-tpl com-odps need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="odps" data-placement="right" title="" data-original-title="<div class='tip-wrap'>ODPS</div>"></div>
-                <div class="com-name">ODPS</div>
-            </div>
-            <div class="com-div com-adv">
-                <div alt="" class="com-tpl com-jiankong need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="jiankong" data-placement="right" title="" data-original-title="<div class='tip-wrap'>JIANKONG</div>"></div>
-                <div class="com-name">云监控</div>
-            </div>
-            <div class="com-div com-adv">
                 <div alt="" class="com-tpl com-yundun need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="yundun" data-placement="right" title="" data-original-title="<div class='tip-wrap'>YUNDUN</div>"></div>
-                <div class="com-name">云盾</div>
-            </div>
-            <div class="com-div com-adv">
-                <div alt="" class="com-tpl com-mqs need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="mqs" data-placement="right" title="" data-original-title="<div class='tip-wrap'>MQS</div>"></div>
-                <div class="com-name">MQS</div>
-            </div>
-            <div class="com-div com-adv">
-                <div alt="" class="com-tpl com-oas need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="oas" data-placement="right" title="" data-original-title="<div class='tip-wrap'>OAS</div>"></div>
-                <div class="com-name">OAS</div>
-            </div>
-            <div class="com-div com-adv">
-                <div alt="" class="com-tpl com-opensearch need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="opensearch" data-placement="right" title="" data-original-title="<div class='tip-wrap'>OPENSEARCH</div>"></div>
-                <div class="com-name">OPENSEARCH</div>
-            </div>
-            <div class="com-div com-adv">
-                <div alt="" class="com-tpl com-pts need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="pts" data-placement="right" title="" data-original-title="<div class='tip-wrap'>PTS</div>"></div>
-                <div class="com-name">PTS</div>
-            </div>
-            <div class="com-div com-adv">
-                <div alt="" class="com-tpl com-sls need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="sls" data-placement="right" title="" data-original-title="<div class='tip-wrap'>sls</div>"></div>
-                <div class="com-name">SLS</div>
-            </div>
-            <div class="com-div">
-                <div alt="" class="com-tpl com-diy need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="diy" data-placement="right" title="" data-original-title="<div class='tip-wrap'>自定义组件</div>"></div>
-                <div class="com-name">自定义组件</div>
+                <div class="com-name">防火墙</div>
             </div>
         </div>
 
@@ -376,14 +338,8 @@
                 <div alt="" class="com-tpl com-win64-s need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="os" data-subtype="10" data-placement="right" title="" data-original-title="Windows Server 2008 R2 标准版 SP1 64位中文版"></div>
                 <div class="com-name">Win08 64CN</div>
             </div>
-            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
         </div>
 
-        <!-- <h3 id="customImageListHead">自定义镜像</h3>
-        <div class="group-content comTemplateWrap" id="customImageListContent">
-
-        </div> -->
 
         <h3 id="customDiskListHead">磁盘和快照</h3>
         <div class="group-content comTemplateWrap" id="customDiskListContent">
@@ -391,16 +347,6 @@
                 <div alt="" class="com-tpl com-disk need-tip com-disk-cloud" data-toggle="tooltip" data-category="def-tpl" data-kind="disk" data-subtype="cloud" data-placement="right" title="" data-original-title="云磁盘">云磁盘</div>
                 <div class="com-name">云磁盘</div>
             </div>
-            <div class="com-div">
-                <div alt="" class="com-tpl com-disk need-tip com-disk-ephemeral" data-toggle="tooltip" data-category="def-tpl" data-kind="disk" data-subtype="ephemeral" data-placement="right" title="" data-original-title="临时磁盘">临时盘</div>
-                <div class="com-name">临时磁盘</div>
-            </div>
-
-        </div>
-
-        <h3 id="customTemplateListHead">自定义模板</h3>
-        <div class="group-content comTemplateWrap" id="customTemplateListContent">
-
         </div>
 
     </div>
@@ -2131,33 +2077,6 @@
         </div>
     </div>
 
-    <!-- Modal -->
-    <div id="saveCustomTplModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mysaveCustomTplModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="mysaveCustomTplModalLabel">保存为模板</h4>
-                </div>
-                <div class="modal-body">
-                    <div style="width:400px;margin:25px auto;margin-bottom:10px;">
-                        <form class="form-inline" role="form">
-                            <div class="form-group">
-                                <label for="customTemplateName">模板名称 ： </label>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="customTemplateName" placeholder="">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="saveCustomTplButton">保存</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
     <!-- 用户中心 -->
     <div id="UserinfoModal" class="modal fade vertical-leftFrame" tabindex="-1" role="dialog" aria-labelledby="myUserinfoModalLabel" aria-hidden="true">
         <div class="modal-dialog" style="width:850px">

@@ -126,7 +126,6 @@ loginFunc = {
             }
             $.removeCookie('savetype');
           }
-          canFunc.getCustomComList();
           domFunc.initStructListModel();
         }
         $('#loginModal').modal('hide');

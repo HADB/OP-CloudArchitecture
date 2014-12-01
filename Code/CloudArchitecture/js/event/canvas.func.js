@@ -676,11 +676,6 @@ window.canFunc = {
                     $('.option-list').remove();
                     return false;
                 });
-                $('.op-item.op-save a').on('mousedown touchstart', function () {
-                    canFunc.onSaveCustomTemplate();
-                    $('.option-list').remove();
-                    return false;
-                });
                 $('.op-item.op-del a').on('mousedown touchstart', tools.deleteNode);
                 $('.op-item.op-remark a').on('mousedown touchstart', function () {
                     domFunc.showRightBar(d["this"].parent);
@@ -888,11 +883,6 @@ window.canFunc = {
                     } else {
                         canFunc.comCopy(d["this"]);
                     }
-                    $('.option-list').remove();
-                    return false;
-                });
-                $('.op-item.op-save a').on('mousedown touchstart', function () {
-                    canFunc.onSaveCustomTemplate();
                     $('.option-list').remove();
                     return false;
                 });
@@ -1752,86 +1742,7 @@ window.canFunc = {
         canFunc.saveHistory();
         return newComObj;
     },
-    onSaveCustomTemplate: function () {
-        var saveCustomTplModal;
-        if (tools.checkLogin()) {
-            saveCustomTplModal = $('#saveCustomTplModal');
-            saveCustomTplModal.modal();
-            saveCustomTplModal.css('paddingTop', '150px');
-        }
-    },
-    saveCustomTemplate: function () {
-        var customComLast, customTemplateListContent, customTemplateListHead, customTemplateName, customTemplateNameValue, customTplHtml, postData, saveCustomTplModal, tempData, tempJson, _self;
-        saveCustomTplModal = $('#saveCustomTplModal');
-        customTemplateName = $('#customTemplateName');
-        customTemplateListHead = $('#customTemplateListHead');
-        customTemplateListContent = $('#customTemplateListContent');
-        _self = global.selectObj;
-        customTemplateNameValue = customTemplateName.val();
-        if (!customTemplateListHead.hasClass('ui-state-active')) {
-            customTemplateListHead.click();
-        }
-        saveCustomTplModal.modal('hide');
-        customTemplateName.val('');
-        customTplHtml = canFunc.returnCustomTplHtml(_self.kind, customTemplateNameValue);
-        tempData = Object.clone(_self.data, 1);
-        if (_self.kind === 'layer') {
-            tempData.children = _self.getSubComData();
-        }
-        tempJson = $.toJSON(tempData);
-        customTemplateListContent.append(customTplHtml);
-        customComLast = customTemplateListContent.find('.com-tpl:last');
-        customComLast.data('infos', tempJson).fadeIn(1000);
-        postData = {
-            kind: _self.kind,
-            name: encodeURIComponent(customTemplateNameValue),
-            infos: encodeURIComponent(tempJson),
-            mail: encodeURIComponent($.cookie('loginMail'))
-        };
-        return tools.post('/customplate/create', postData, canFunc.saveCustomComCallback);
-    },
-    saveCustomComCallback: function (_id) {
-        var customComLast, customTemplateListContent;
-        if (_id === 'err') {
-            $.notify({
-                msg: '保存失败,刷新后重新',
-                type: 'warning'
-            });
-        } else if (_id === 'nosession') {
-            $.notify({
-                msg: '重新登录',
-                type: 'warning'
-            });
-        } else {
-            customTemplateListContent = $('#customTemplateListContent');
-            customComLast = customTemplateListContent.find('.com-div:last');
-            customComLast.attr('id', "cus-tpl-" + _id).data('_id', _id);
-        }
-    },
-    getCustomComList: function () {
-        var data;
-        if (tools.checkLogin(1)) {
-            data = {
-                mail: encodeURIComponent($.cookie('loginMail'))
-            };
-            tools.post('/customplate/list', data, canFunc.getCustomComCallback);
-        }
-    },
-    getCustomComCallback: function (_data) {
-        var ctInfos, ctName, customComLast, customDivLast, customTemplateListContent, customTpl, customTplHtml, _i, _len;
-        customTemplateListContent = $('#customTemplateListContent');
-        for (_i = 0, _len = _data.length; _i < _len; _i++) {
-            customTpl = _data[_i];
-            ctName = decodeURIComponent(customTpl.name);
-            ctInfos = decodeURIComponent(customTpl.infos);
-            customTplHtml = canFunc.returnCustomTplHtml(customTpl.kind, ctName, customTpl._id);
-            customTemplateListContent.append(customTplHtml);
-            customComLast = customTemplateListContent.find('.com-tpl:last');
-            customComLast.data('infos', ctInfos).show();
-            customDivLast = customTemplateListContent.find('.com-div:last');
-            customDivLast.data('_id', customTpl._id);
-        }
-    },
+
     distroyLine: function (obj) {
         if (obj.getCategory() === 'layer') {
             canFunc.distroyLayerLine(obj);

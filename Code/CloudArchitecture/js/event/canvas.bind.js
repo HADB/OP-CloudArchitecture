@@ -19,7 +19,6 @@ canvasBind = {
       layer.add(templayer);
       layer.batchDraw();
     }
-    canFunc.getCustomComList();
     canFunc.initEvent();
   }
 };

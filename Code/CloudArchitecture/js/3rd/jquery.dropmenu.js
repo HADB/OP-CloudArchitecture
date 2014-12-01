@@ -23,7 +23,6 @@
                           '<li class="op-item op-copy" style="display: none;"><a href="javascript:void(0);" >复制</a></li>',
                           '<li class="op-item op-del" style="display: none;"><a href="javascript:void(0);" >从画布删除</a></li>',
                           '<li class="op-item op-release" style="display: none;"><a href="javascript:void(0);" >释放服务</a></li>',
-                          '<li class="op-item op-save" style="display: none;"><a href="javascript:void(0);" >存为模板</a></li>',
                           '<li class="op-item op-config" style="display: none;"><a href="javascript:void(0);" >配置</a></li>',
                           '<li class="op-item op-remark" style="display: none;"><a href="javascript:void(0);" >备注</a></li>',
                           '<li class="op-item op-view" style="display: none;"><a href="javascript:void(0);">查看</a></li>',
