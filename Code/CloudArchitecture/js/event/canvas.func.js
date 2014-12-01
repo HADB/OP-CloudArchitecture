@@ -2492,7 +2492,7 @@ window.canFunc = {
             };
             tools.post('/masterplate/get', postData, canFunc.setStage);
         } else if ($.cookie('isEdit') && window.localStorage) {
-            canFunc.setStage($.evalJSON(localStorage.lastStep));
+            //canFunc.setStage($.evalJSON(localStorage.lastStep));
         } else if ($.cookie('archiname')) {
             _archiname = $.cookie('archiname');
             postData = {
