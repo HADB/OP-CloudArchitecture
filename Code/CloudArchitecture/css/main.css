@@ -34,11 +34,13 @@
 }
 
 #left-board .com-div {
-    float: left;
-    width: 80px;
+    width: 170px;
     text-align: center;
-    padding: 10px 0 0 0;
-    margin: 0 -15px 0 10px;
+    padding: 5px 5px;
+    height: 74px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 5px;
 }
 
 #left-board .comTemplateWrap .com-div {
@@ -47,10 +49,10 @@
 
 #left-board .com-div:hover {
     background: #d6dbe0;
-    border-radius: 4px;
 }
 
 .com-tpl {
+    float: left;
     border-radius: 4px;
     height: 64px;
     line-height: 60px;
@@ -65,7 +67,8 @@
     margin: 10px 0 0 0;
     font-size: 12px;
     height: 30px;
-    width: 80px;
+    width: 100%;
+    padding-left: 64px;
 }
 
 .com-layer {
