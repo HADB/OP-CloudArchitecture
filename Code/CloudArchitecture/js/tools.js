@@ -83,7 +83,7 @@ tools = {
         var _this;
         _this = $('#captcha-link');
         _this.html('');
-        _this.html('<img src="/captcha.jpg" alt="" style="cursor:pointer"/>');
+        _this.html('<img src="/captcha.jpg"  style="cursor:pointer"/>');
     },
     convertAbsToRelPos: function (obj, flag) {
         var _absPos, _relPos;

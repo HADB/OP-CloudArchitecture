@@ -181,10 +181,10 @@
 
     <header id="topbar">
         <div style="display:none">
-            <img src="img/task_icon/task_waiting.png" alt="">
-            <img src="img/task_icon/task_success.png" alt="">
-            <img src="img/task_icon/task_fault.png" alt="">
-            <img src="img/task_icon/task_pending.png" alt="">
+            <img src="img/task_icon/task_waiting.png">
+            <img src="img/task_icon/task_success.png">
+            <img src="img/task_icon/task_fault.png">
+            <img src="img/task_icon/task_pending.png">
         </div>
         <section class="fleft">
             <div class="logo">
@@ -267,35 +267,30 @@
         <h3>组件和层</h3>
         <div class="group-content">
             <div class="com-div">
-                <div alt="" class="com-tpl com-layer need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="layer" data-subtype="layer" data-placement="right" title="" data-original-title="<div class='tip-wrap'><p>层（Layer）是组件的容器，是将组件作了逻辑上的划分，例如web层、数据层等。此外，对层的直接操作可以让您的组件管理变得更加方便和快捷。除了负载均衡SLB以外，所有的组件必须被放置在层内才有效。</p></div>"></div>
+                <div class="com-tpl com-layer need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="layer" data-subtype="layer" data-placement="right" title=""></div>
                 <div class="com-name">层</div>
             </div>
             <div class="com-div">
-                <div alt="" class="com-tpl com-ecs need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="ecs" data-placement="right" title="" data-original-title="<div class='tip-wrap'><p>云服务器（Elastic Compute Service, 简称ECS）是一种处理能力可弹性伸缩的计算服务，其管理方式比物理服务器更简单高效。</p><p>云服务器帮助您快速构建更稳定、安全的应用，降低开发运维的难度和整体IT成本，使您能够更专注于核心业务创新。</p></div>"></div>
-                <div class="com-name">ECS</div>
+                <div class="com-tpl com-ecs need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="ecs" data-placement="right" title=""></div>
+                <div class="com-name">服务器</div>
             </div>
             <div class="com-div">
-                <div alt="" class="com-tpl com-slb need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="slb" data-placement="right" title="" data-original-title="<div class='tip-wrap'><p>负载均衡（Server Load Balancer，简称SLB）是对多台云服务器进行流量分发的负载均衡服务。</p><p>SLB可以通过流量分发扩展应用系统对外的服务能力，通过消除单点故障提升应用系统的可用性。</p></div>"></div>
-                <div class="com-name">SLB</div>
+                <div class="com-tpl com-slb need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="slb" data-placement="right" title=""></div>
+                <div class="com-name">负载均衡</div>
             </div>
             <div class="com-div">
-                <div alt="" class="com-tpl com-cdn need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="cdn" data-placement="right" title="" data-original-title="<div class='tip-wrap'>CDN</div>"></div>
+                <div class="com-tpl com-cdn need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="cdn" data-placement="right" title=""></div>
                 <div class="com-name">CDN</div>
             </div>
             <div class="com-div com-adv">
-                <div alt="" class="com-tpl com-yundun need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="yundun" data-placement="right" title="" data-original-title="<div class='tip-wrap'>YUNDUN</div>"></div>
+                <div class="com-tpl com-yundun need-tip" data-toggle="tooltip" data-category="def-tpl" data-kind="com" data-subtype="yundun" data-placement="right" title=""></div>
                 <div class="com-name">防火墙</div>
             </div>
-        </div>
-
-        <h3 id="customDiskListHead">磁盘和快照</h3>
-        <div class="group-content comTemplateWrap" id="customDiskListContent">
             <div class="com-div">
-                <div alt="" class="com-tpl com-disk need-tip com-disk-cloud" data-toggle="tooltip" data-category="def-tpl" data-kind="disk" data-subtype="cloud" data-placement="right" title="" data-original-title="云磁盘">云磁盘</div>
-                <div class="com-name">云磁盘</div>
+                <div class="com-tpl com-disk need-tip com-disk-cloud" data-toggle="tooltip" data-category="def-tpl" data-kind="disk" data-subtype="cloud" data-placement="right" title=""></div>
+                <div class="com-name">磁盘</div>
             </div>
         </div>
-
     </div>
     <div id="middle-board">
         <div id="container"></div>
@@ -3219,7 +3214,7 @@
                         </div>
                         <div class="control-group clearfix" style="height:52px">
                             <input type="text" class="login-field fleft form-control input-lg" style="margin-right:10px;width:200px" value="" placeholder="请填写验证码" id="reg-digits">
-                            <a onclick="tools.reloadCaptcha()" id="captcha-link" class="fleft" style="width:100px"><img src="captcha.jpg" alt="" style="cursor:pointer" /></a>
+                            <a onclick="tools.reloadCaptcha()" id="captcha-link" class="fleft" style="width:100px"><img src="captcha.jpg" style="cursor:pointer" /></a>
                         </div>
                         <div class="control-group">
                             <label id="reg-label-error" class="labelerror"></label>

@@ -2,7 +2,7 @@
 var AbsEcs, EcsDisk;
 
 AbsEcs = function (params) {
-    var amountWrapGroup, bandText, bindTipsEvent, cmSeparateText, comBandImage, comBitImage, comCodeImage, comDiskImage, comGroup, comOsImage, countCircle, countText, cpuText, diskText, elementWrapGroup, icoKey, icoObj, iconWrapGroup, memoryText, secGroupRect, statusSynchroImage, textKey, textObj, textWrapGroup, titleText, _config, _params, _ref, _ref1;
+    var amountWrapGroup, bandText, cmSeparateText, comGroup, countCircle, countText, cpuText, diskText, elementWrapGroup, icoKey, icoObj, iconWrapGroup, memoryText, statusSynchroImage, textKey, textObj, textWrapGroup, titleText, _config, _params, _ref, _ref1;
     _params = params || {};
     _config = {
         ecs: 'kind'
@@ -10,48 +10,7 @@ AbsEcs = function (params) {
     _params = $.extend({}, _config, _params);
     comGroup = new AbsCom(_params);
     comGroup.images.main.setY(-2);
-    secGroupRect = new kk.Rect({
-        x: 38,
-        y: 9,
-        width: 25,
-        height: 2,
-        fill: "#52ae75"
-    });
-    comOsImage = new kk.Image({
-        x: 24,
-        y: 20,
-        width: 16,
-        height: 16,
-        image: global.images.comNoSys
-    });
-    comBitImage = new kk.Image({
-        x: 43,
-        y: 21,
-        image: global.images.comNoBit,
-        width: 14,
-        height: 14
-    });
-    comCodeImage = new kk.Image({
-        x: 60,
-        y: 21,
-        image: global.images.comCode,
-        width: 14,
-        height: 14
-    });
-    comBandImage = new kk.Image({
-        x: 25,
-        y: 56,
-        image: global.images.comBandwidth,
-        width: 24,
-        height: 15
-    });
-    comDiskImage = new kk.Image({
-        x: 51,
-        y: 56,
-        image: global.images.comBDisk,
-        width: 24,
-        height: 15
-    });
+
     statusSynchroImage = new kk.Image({
         x: 35,
         y: -35,
@@ -144,20 +103,10 @@ AbsEcs = function (params) {
     comGroup.add(amountWrapGroup);
     elementWrapGroup = new kk.Group;
     iconWrapGroup = new kk.Group;
-    iconWrapGroup.add(secGroupRect);
-    iconWrapGroup.add(comOsImage);
-    iconWrapGroup.add(comBitImage);
-    iconWrapGroup.add(comCodeImage);
-    iconWrapGroup.add(comBandImage);
-    iconWrapGroup.add(comDiskImage);
     elementWrapGroup.add(iconWrapGroup);
     textWrapGroup = new kk.Group;
     textWrapGroup.add(titleText);
-    textWrapGroup.add(cpuText);
-    textWrapGroup.add(memoryText);
     textWrapGroup.add(cmSeparateText);
-    textWrapGroup.add(bandText);
-    textWrapGroup.add(diskText);
     elementWrapGroup.add(textWrapGroup);
     comGroup.add(elementWrapGroup);
     iconWrapGroup.add(statusSynchroImage);
@@ -172,62 +121,14 @@ AbsEcs = function (params) {
     };
     comGroup.elements.root = elementWrapGroup;
     comGroup.elements.amount = amountWrapGroup;
-    comGroup.elements.secgroup = secGroupRect;
-    comGroup.images.bit = comBitImage;
-    comGroup.images.os = comOsImage;
-    comGroup.images.code = comCodeImage;
-    comGroup.images.band = comBandImage;
-    comGroup.images.disk = comDiskImage;
     comGroup.images.statusSynchro = statusSynchroImage;
-    bindTipsEvent = function (icoKey, icoObj) {
-        icoObj.on('mouseover', function (e) {
-            var _name;
-            e.cancelBubble = true;
-            switch (icoKey) {
-                case 'os':
-                    if (!tools.getOsStrByVal(icoObj.parent.parent.parent.data.osVal)) {
-                        _name = '<span style="color:red">尚未设置镜像</span>';
-                    } else {
-                        _name = '镜像: ' + tools.getOsStrByVal(icoObj.parent.parent.parent.data.osVal);
-                    }
-                    break;
-                case 'bandText':
-                    _name = '带宽: ' + icoObj.parent.parent.parent.data.bandWidth + 'MB';
-                    break;
-                case 'diskText':
-                    if (icoObj.parent.parent.parent.data.disks.length <= 0) {
-                        _name = '<span style="color:red">尚未设置镜像</span>';
-                    } else {
-                        _name = "1块系统盘 + " + (icoObj.parent.parent.parent.data.disks.length - 1) + "块数据盘";
-                    }
-                    break;
-                default:
-                    return;
-            }
-            tools.setCursor('default');
-            if (icoKey) {
-                $.tips({
-                    id: "ecs-ico-tips",
-                    name: _name,
-                    biasX: 10,
-                    biasY: 10
-                }, this);
-            }
-        });
-        icoObj.on('mouseout', function () {
-            tools.setCursor('-webkit-grab');
-            $('#ecs-ico-tips').remove();
-        });
-    };
     _ref = comGroup.images;
     for (icoKey in _ref) {
         icoObj = _ref[icoKey];
-        bindTipsEvent(icoKey, icoObj);
     }
     _ref1 = comGroup.texts;
     for (textKey in _ref1) {
         textObj = _ref1[textKey];
-        bindTipsEvent(textKey, textObj);
     }
     comGroup.data.osVal = null;
     comGroup.data.cpu = 1;

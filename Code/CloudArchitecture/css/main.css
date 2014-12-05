@@ -52,6 +52,7 @@
 }
 
 .com-tpl {
+    background-color: #333333;
     float: left;
     border-radius: 4px;
     height: 64px;
@@ -450,12 +451,8 @@
     }
 }
 
-.com-disk {
-    font-size: 12px;
-}
-
 .com-disk-cloud {
-    background: url(../img/disk/ico-cloud.png) center center no-repeat;
+    background-image: url(../img/disk/ico-cloud.png);
 }
 
 .com-disk-ephemeral {

@@ -6814,12 +6814,11 @@ window.domFunc = {
     }
   },
   getSnapshotsListCallback: function(instanceId, diskId, _data) {
-    var customDiskListContent, json, obj, tempHtml, _i, _len, _ref;
+    var  json, obj, tempHtml, _i, _len, _ref;
     if ((_data.code !== 1) || (_data.body === '')) {
       return;
     }
     json = $.evalJSON(_data.body);
-    customDiskListContent = $('#customDiskListContent');
     if (!json.data.Snapshots) {
       return;
     }
@@ -6831,12 +6830,11 @@ window.domFunc = {
       if (!global.snapshotInfoList[obj.SnapshotId]) {
         global.snapshotInfoList[obj.SnapshotId] = obj;
         tempHtml = "<div class='com-div custom-disk'> <div alt='' class='com-tpl com-disk need-tip com-disk-snapshot' data-toggle='tooltip' data-category='def-tpl' data-kind='disk' data-subtype='" + obj.SnapshotId + "' data-placement='right' title='' data-original-title='快照ID：" + obj.SnapshotId + "'> <div class='cus-tpl-close'></div> </div> <div class='com-name toe'>" + obj.SnapshotId + "</div> </div>";
-        customDiskListContent.append(tempHtml);
       }
     }
   },
   revertSnapshotDisk: function(snapshotId) {
-    var customDiskListContent, obj, tempHtml;
+    var obj, tempHtml;
     if (!snapshotId) {
       return;
     }
@@ -6844,9 +6842,7 @@ window.domFunc = {
     if (!obj) {
       return;
     }
-    customDiskListContent = $('#customDiskListContent');
     tempHtml = "<div class='com-div custom-disk'> <div alt='' class='com-tpl com-disk need-tip com-disk-snapshot' data-toggle='tooltip' data-category='def-tpl' data-kind='disk' data-subtype='" + obj.SnapshotId + "' data-placement='right' title='' data-original-title='快照ID：" + obj.SnapshotId + "'> <div class='cus-tpl-close'></div> </div> <div class='com-name toe'>" + obj.SnapshotId + "</div> </div>";
-    customDiskListContent.append(tempHtml);
   },
   delNotifyCallback: function(_data) {},
   showUserinfoClick: function() {

@@ -17,7 +17,8 @@ def = {
         orange2: '#fff0d7',
         yearColor: 'black',
         amountColor: 'blue',
-        guideLine: 'orange'
+        guideLine: 'orange',
+        greenBlue: '#0FAFC2'
     },
     lineType: {
         bright: 1,

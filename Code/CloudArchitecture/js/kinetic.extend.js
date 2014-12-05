@@ -35,7 +35,7 @@ kk.Layer.prototype.setAllLayerCornersHidden = function (flag) {
         });
     }
     allLayerRects.each(function (item) {
-        item.setStroke(def.color.lightGray);
+        item.setStroke(def.color.greenBlue);
     });
     allLayerTitleShapes.each(function (item) {
         item.setStroke(def.color.lightGray);

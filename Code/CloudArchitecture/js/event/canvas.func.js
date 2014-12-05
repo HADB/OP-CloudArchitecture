@@ -2400,13 +2400,13 @@ window.canFunc = {
         id = ("cus-tpl-" + id) || '';
         switch (kind) {
             case 'ecs':
-                customTplHtml = '<div class="com-div" id=' + id + '> <div src="" alt="" class="com-tpl com-ecs need-tip dnone" data-toggle="tooltip" data-category="cus-tpl" data-kind="com" data-subtype="ecs" data-placement="right" title="" data-original-title=\'<div class="tip-wrap"><p>' + ctName + '</p></div>\'><div class="cus-tpl-ico cus-tpl-close"></div><div class="cus-tpl-ico cus-tpl-ecs"></div></div> </div>';
+                customTplHtml = '<div class="com-div" id=' + id + '> <div src=""  class="com-tpl com-ecs need-tip dnone" data-toggle="tooltip" data-category="cus-tpl" data-kind="com" data-subtype="ecs" data-placement="right" title="" data-original-title=\'<div class="tip-wrap"><p>' + ctName + '</p></div>\'><div class="cus-tpl-ico cus-tpl-close"></div><div class="cus-tpl-ico cus-tpl-ecs"></div></div> </div>';
                 break;
             case 'rds':
-                customTplHtml = '<div class="com-div" id=' + id + '> <div src="" alt="" class="com-tpl com-rds need-tip dnone" data-toggle="tooltip" data-category="cus-tpl" data-kind="com" data-subtype="rds" data-placement="right" title="" data-original-title=\'<div class="tip-wrap"><p>' + ctName + '</p></div>\'><div class="cus-tpl-ico cus-tpl-close"></div><div class="cus-tpl-ico cus-tpl-rds"></div></div> </div>';
+                customTplHtml = '<div class="com-div" id=' + id + '> <div src=""  class="com-tpl com-rds need-tip dnone" data-toggle="tooltip" data-category="cus-tpl" data-kind="com" data-subtype="rds" data-placement="right" title="" data-original-title=\'<div class="tip-wrap"><p>' + ctName + '</p></div>\'><div class="cus-tpl-ico cus-tpl-close"></div><div class="cus-tpl-ico cus-tpl-rds"></div></div> </div>';
                 break;
             case 'layer':
-                customTplHtml = '<div class="com-div" id=' + id + '> <div src="" alt="" class="com-tpl com-layer need-tip dnone" data-toggle="tooltip" data-category="cus-tpl" data-kind="layer" data-subtype="layer" data-placement="right" title="" data-original-title=\'<div class="tip-wrap"><p>' + ctName + '</p></div>\'><div class="cus-tpl-ico cus-tpl-close"></div><div class="cus-tpl-ico cus-tpl-layer"></div></div> </div>';
+                customTplHtml = '<div class="com-div" id=' + id + '> <div src=""  class="com-tpl com-layer need-tip dnone" data-toggle="tooltip" data-category="cus-tpl" data-kind="layer" data-subtype="layer" data-placement="right" title="" data-original-title=\'<div class="tip-wrap"><p>' + ctName + '</p></div>\'><div class="cus-tpl-ico cus-tpl-close"></div><div class="cus-tpl-ico cus-tpl-layer"></div></div> </div>';
                 break;
             default:
                 return;
