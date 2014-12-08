@@ -53,9 +53,9 @@ def = {
         layerY: 75
     },
     layer: {
-        width: 300,
+        width: 1000,
         minWidth: 220,
-        height: 150,
+        height: 500,
         innerOffset: 50,
         outerOffset: 0,
         xRadius: 150,

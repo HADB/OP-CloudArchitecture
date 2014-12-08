@@ -10,7 +10,7 @@ AbsLayer = function (params) {
         draggable: true,
         category: 'layer',
         kind: 'layer',
-        name: "未命名层" + (entities.layers.length + 1),
+        name: "默认层" + (entities.layers.length + 1),
         id: "layer_" + _id,
         tname: _id,
         width: def.layer.width,

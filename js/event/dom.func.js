@@ -2686,7 +2686,7 @@ window.domFunc = {
   },
   selectLayerModelInit: function() {
     $('input[name=rd_selectLayer][data-value=newlayer]').iCheck('check');
-    $('#selectLayer_layerName').val('未命名层');
+    $('#selectLayer_layerName').val('默认层');
     $('#selectLayerModalError').text('');
     if (!$('#combineEcs:checked').length) {
       $('#combineEcs').trigger('click');

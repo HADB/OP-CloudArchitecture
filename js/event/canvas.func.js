@@ -2779,7 +2779,7 @@ window.canFunc = {
             }
         }
         newLayerObj = {};
-        currLayerName = layerName ? layerName : '未命名层';
+        currLayerName = layerName ? layerName : '默认层';
         widthTime = 1;
         heightTime = 1;
         comLen = comListArr.length;
