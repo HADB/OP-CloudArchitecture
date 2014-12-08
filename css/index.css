@@ -137,6 +137,7 @@ a {
     background: #FFFFFF;
     box-shadow: -1px 0 5px #888;
     z-index: 999;
+    -moz-user-select: none;
 }
 
 #left-components {
