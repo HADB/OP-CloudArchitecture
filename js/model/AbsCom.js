@@ -310,7 +310,7 @@ comFactory = function (_params) {
             break;
         case 'yundun':
             if (_params.name == null) {
-                _params.name = '云盾';
+                _params.name = '防火墙';
             }
             tempObj = new AbsYundun(_params);
             break;
@@ -319,12 +319,6 @@ comFactory = function (_params) {
                 _params.name = '云监控';
             }
             tempObj = new AbsJiankong(_params);
-            break;
-        case 'diy':
-            if (_params.name == null) {
-                _params.name = '自定义组件';
-            }
-            tempObj = new AbsDiy(_params);
             break;
         case 'mqs':
             tempObj = new AbsMqs(_params);
